@@ -8,7 +8,7 @@ layout: pattern
 
 <div class="pl-versions">
 <div class="pl-panel">
-        <h4>1.5.0 - May 16, 2016 <a href="{{site.repository.url}}/releases/tag/v1.4.5">(Download)</a></h4>
+        <h4>1.5.0 - May 16, 2016 <a href="{{site.repository.url}}/releases/tag/v1.5.0">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
             <li>Introduction of Bootstrap 4 style cards (beta)</li>
