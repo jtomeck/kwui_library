@@ -15,7 +15,6 @@ __Pagination__
 ### Future patterns
 __To be scheduled__
 - Add description for "non-iconothon" icons
-- Time picker
 - Notes
 - Image/text zoom
 - Image gallery
@@ -34,22 +33,31 @@ __To be scheduled__
 - Add red form highlights for multiple checkboxes and other text-heavy form elements
 - Writing style guide (mod OCCO's for pattern library - See https://design.atlassian.com/2.1/product/foundations/writing-style)
 
+
 __v1.4 Releases (10/2015)__
 - Iconothon icons
 - New inspirations
 - Tooltips with lighter color
 - Icon color scheme
 
-__v1.5 Releases (TBD)__
-- Step indicator modifications
-- Tooltip indicators
-- Tables and expanded row color schema
+__v1.5 Releases (6/2016)__
+- Time picker
 - Cards
+- Tooltip indicators update
+
+
+__v1.6 Releases (TBD)__
+- Step indicator modifications
+- Tables and expanded row color schema
+- Drag and drop patterns
+- FontAwesome icon guidance documentation
+
 
 __v2.0 Releases (TBD)__
 - Gadget framework
 - Mobile-specific patterns
-- Cards
+- SASS conversion
+- Bootstrap 4.0 update
 
 
 __Other__

@@ -79,7 +79,7 @@ Cards support a wide variety of content, including images, text, list groups, li
 
 
 
-#### Image position & image caps
+#### Image position and image caps
 Images can be positioned inside of cards quickly and easily with `.card-image`.  Be sure to set `.img-responsive` to allow the image to shrink and grow responsively.
 
 {::nomarkdown}
@@ -245,7 +245,7 @@ Cards include their own variant classes for quickly changing the background-colo
 {% endhighlight %}
 
 
-#### Headers & footers
+#### Headers and footers
 Add an optional header and/or footer within a card.
 
 {::nomarkdown}
@@ -445,7 +445,7 @@ Need a set of equal width and height cards that aren’t attached to one another
 </div>
 {% endhighlight %}
 
-#### Columns & masonry
+#### Columns and masonry
 Cards can be organized into Masonry-like columns with just CSS by wrapping them in `.card-columns.` Only applies to small devices and above.
 
 {::nomarkdown}
