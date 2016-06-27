@@ -15,7 +15,7 @@ layout: pattern
             <li>Addition of new toast notification style options</li>
             <li>Addition of optional inverse label pairs</li>
             <li>New time picker component</li>
-            <li>New time picker component</li>
+
             
         </ul>
         <span class="label subtle label-success">IMPROVED</span>
