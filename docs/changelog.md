@@ -8,6 +8,14 @@ layout: pattern
 
 <div class="pl-versions">
 <div class="pl-panel">
+        <h4>1.5.1 - Jul 21, 2016 <a href="{{site.repository.url}}/releases/tag/v1.5.1">(Download)</a></h4>
+        <span class="label subtle label-success">UPDATED</span>
+        <ul>
+            <li>Modification of date and time formats</li>
+            <li>Updated bower.json file with correct version number</li>
+        </ul>
+</div>
+<div class="pl-panel">
         <h4>1.5.0 - May 16, 2016 <a href="{{site.repository.url}}/releases/tag/v1.5.0">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
