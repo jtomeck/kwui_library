@@ -19,26 +19,50 @@ title: "Data formats"
         </tr>
         <tr>
             <td><code>short date</code></td>
+            <td>January 11</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated short date</code></td>
             <td>Jan 11</td>
         </tr>
         <tr>
             <td><code>long date</code></td>
+            <td>April 23, 2010</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated long date</code></td>
             <td>Apr 23, 2010</td>
         </tr>
         <tr>
             <td><code>short date and time</code></td>
+            <td>February 5, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated short date and time</code></td>
             <td>Feb 5, 8:00 AM</td>
         </tr>
         <tr>
             <td><code>long date and time</code></td>
-            <td>Feb 8, 2014, 1:00 PM</td>
+            <td>February 8, 2016, 1:00 PM</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated long date and time</code></td>
+            <td>Feb 8, 2016, 1:00 PM</td>
         </tr>
         <tr>
             <td><code>day of week and time</code></td>
+            <td>Monday, 7:30 AM</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated day of week and time</code></td>
             <td>Mon, 7:30 AM</td>
         </tr>
         <tr>
             <td><code>day of week, short date and time</code></td>
+            <td>Monday, March 15, 3:25 PM</td>
+        </tr>
+        <tr>
+            <td><code>abbreviated day of week, abbreviated short date and time</code></td>
             <td>Mon, Mar 15, 3:25 PM</td>
         </tr>
     </tbody>
@@ -63,11 +87,11 @@ For dates/times associated with user generated data (e.g., notes, documents), us
         </tr>
         <tr>
             <td>If the date is in the past or future within the current calendar year, format as <code>short date</code></td>
-            <td>Jan 11</td>
+            <td>January 11</td>
         </tr>
         <tr>
             <td>If the date is in the past or future outside the current calendar year, format as <code>long date</code></td>
-            <td>Apr 23, 2010</td>
+            <td>April 23, 2010</td>
         </tr>
     </tbody>
 </table>
