@@ -90,16 +90,16 @@ If a simple action is initiated from an icon-only button, the icon can be replac
 
 {::nomarkdown}
 <div class="pl-preview">
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-bookmark"></i></button>
 <button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-clipboard"></i></button>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-bookmark"></i></button>
 <button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-clipboard"></i></button>
 {% endhighlight %}
 
 #### Loading overlay
