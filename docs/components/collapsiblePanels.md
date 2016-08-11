@@ -100,26 +100,28 @@ Collapsible panels can operate as either single-select (accordion) or multi-sele
 
 {% highlight html %}
 <div class="panel-toggler">
-      <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
-    </div>
-    <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="3headingOne" data-target="#3collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="3collapseOne">
-          <h4 class="panel-title">
-              <i class="icon icon-angle-right" ></i>Header
-          </h4>
-        </div>
-        <div id="3collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="3headingOne">
-          <div class="panel-body">
-            ...
-          </div>
+  <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
+</div>
+  <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="3headingOne" data-target="#3collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="3collapseOne">
+        <h4 class="panel-title">
+          <i class="icon icon-angle-right" ></i>Header
+        </h4>
+      </div>
+      <div id="3collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="3headingOne">
+        <div class="panel-body">
+           ...
         </div>
       </div>
+    </div>
+  </div>
 {% endhighlight %}
 
 </div>
 
 <div class="pl-pattern">
+
 ### Styles
 
 #### Standard 
@@ -198,19 +200,20 @@ The standard style provides more distinction between the panel and internal/surr
 {:/nomarkdown}
 
 {% highlight html %}
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="collapseOne">
-          <h4 class="panel-title">
-              <i class="icon icon-angle-right" ></i>Header
-          </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-            ...
-          </div>
-        </div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="collapseOne">
+      <h4 class="panel-title">
+         <i class="icon icon-angle-right" ></i>Header
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        ...
       </div>
+    </div>
+  </div>
+</div>
 {% endhighlight %}
 
 #### Light 
@@ -289,20 +292,20 @@ For simple content or layouts, the light style may work better.
 {:/nomarkdown}
 
 {% highlight html %}
-<div class="pl-preview">
-    <div class="panel-group" id="2accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel">
-        <div class="panel-heading" role="tab" id="2headingOne" data-parent="#2accordion" data-target="#2collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="2collapseOne">
-          <h4 class="panel-title">
-              <i class="icon icon-angle-right" ></i>Header
-          </h4>
-        </div>
-        <div id="2collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingOne">
-          <div class="panel-body">
-            ...
-          </div>
-        </div>
+<div class="panel-group" id="2accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel">
+    <div class="panel-heading" role="tab" id="2headingOne" data-parent="#2accordion" data-target="#2collapseOne" aria-expanded="true" data-toggle="collapse" aria-controls="2collapseOne">
+      <h4 class="panel-title">
+        <i class="icon icon-angle-right" ></i>Header
+      </h4>
+    </div>
+    <div id="2collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="2headingOne">
+      <div class="panel-body">
+        ...
       </div>
+    </div>
+  </div>
+</div>
 {% endhighlight %}
 
 </div>
