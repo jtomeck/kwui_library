@@ -89,17 +89,13 @@ For buttons with text, the load spinner can appear where the icon would appear. 
 If a simple action is initiated from an icon-only button, the icon can be replaced with the load spinner until the action is complete.
 
 {::nomarkdown}
-<div class="pl-preview">
-<button class="btn btn-default btn-icon-only"><i class="icon icon-bookmark"></i></button>
 <button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="icon icon-clipboard"></i></button>
-</div>
 {:/nomarkdown}
 
 {% highlight html %}
-<button class="btn btn-default btn-icon-only"><i class="icon icon-bookmark"></i></button>
+<div class="pl-preview">
 <button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="icon icon-clipboard"></i></button>
+</div>
 {% endhighlight %}
 
 #### Loading overlay

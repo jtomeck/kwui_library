@@ -137,9 +137,11 @@ For dates/times associated with user generated data (e.g., notes, documents), us
 </div>
 
 <div class="pl-pattern" style="border:orange">
-### Depreciated
+### Deprecated
 
-##### The patterns below have been depreciated. Please ensure you are using the current standardized date format above.
+##### The patterns below are deprecated. 
+
+In some limited circumstances these are still acceptable to use (e.g. legacy or internal), but please ensure you are using the current standardized date format above for publically accessible applications.
 
 {::nomarkdown}
 <table class="table table-bordered" style="max-width: 700px;">

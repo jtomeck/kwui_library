@@ -32,7 +32,8 @@ Use this for term definitions when a term may not be obvious to your target audi
 {:/nomarkdown}
 
 {% highlight html %}
-// HTML
+<abbr data-toggle="popover" data-placement="top" data-container="body" data-trigger="hover" data-content="The person, group of persons, or organization that received ownership rights of the patent application or patent.">Assignee</abbr>: Smith, John D.
+</div>
 {% endhighlight %}
 
 &nbsp;
@@ -54,7 +55,14 @@ Use this when the information is only relevant once the user has focused the fie
 {:/nomarkdown}
 
 {% highlight html %}
-// HTML
+<form class="form-horizontal" role="form" style="max-width: 450px;">
+    <div class="form-group" >
+        <label for="po1" class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-9">
+            <input class="form-control form-control-width-md" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
+        </div>
+    </div>
+</form>
 {% endhighlight %}
 
 &nbsp;
@@ -67,10 +75,17 @@ Use "Learn more" links to provide additional help text only when the user needs 
 <form style="max-width: 450px;" role="form">
     <div class="form-group">
         <div class="radio">
-            <label><input type="radio" name="optionsRadios" id="optionsRadios1" checked value="option1">Standard characters <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. <a href="#">Learn more.</a></div></label>
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" checked value="option1">Standard characters 
+                <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. 
+                <a href="#">Learn more.</a></div>
+            </label>
         </div>
         <div class="radio">
-            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Special form <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. <a href="#">Learn more.</a></div></label>
+            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Special form 
+                <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. 
+                <a href="#">Learn more.</a></div>
+            </label>
         </div>
     </div>
 </form>
@@ -78,7 +93,23 @@ Use "Learn more" links to provide additional help text only when the user needs 
 {:/nomarkdown}
 
 {% highlight html %}
-// HTML
+<form role="form">
+    <div class="form-group">
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" checked value="option1">Standard characters 
+                <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. 
+                <a href="#">Learn more.</a></div>
+            </label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Special form 
+                <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. 
+                <a href="#">Learn more.</a></div>
+            </label>
+        </div>
+    </div>
+</form>
 {% endhighlight %}
 
 
@@ -101,7 +132,16 @@ Use "Information" icons to provide explanations and elaborations for titles and 
 {:/nomarkdown}
 
 {% highlight html %}
-// HTML
+<div class="panel panel-default margin-2" style="max-width: 450px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Weekly traffic
+            <i class="icon icon-info-circle icon-muted margin-left-1" data-toggle="popover" data-placement="top" data-container="body" data-trigger="hover" data-content="Only unique visits this week are counted. Repeat visitors during the same week are not counted."></i>
+        </h3>
+    </div>
+    <div class="panel-body">
+        <p></p>
+    </div>
+</div>
 {% endhighlight %}
 
 </div>
