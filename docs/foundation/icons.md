@@ -941,8 +941,7 @@ title: "Icons"
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-setasdefault-icon"></i> oc-setasdefault-icon</div>
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-set-delete-icon"></i> oc-set-delete-icon</div>
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-set-rename-icon"></i> oc-set-rename-icon</div>
-    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-spe-mgmt-db-color-icon"></i> oc-spe-mgmt-db-color-icon</div>
-    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-spe-mgmt-db-white-icon"></i> oc-spe-mgmt-db-white-icon</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-spe-mgmt-db-icon"></i> oc-spe-mgmt-db-icon</div>
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-status-icon"></i> oc-status-icon</div>
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-submit-icon"></i> oc-submit-icon</div>
     <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-oc oc-tab-slope-left-icon"></i> oc-tab-slope-left-icon</div>
@@ -961,7 +960,7 @@ These icons were created for the Official Correspondence application.
 
 #### Suggested usage
 
-- currently posted for awareness, further use is being evaluated.
+- Currently posted for awareness, further use is being evaluated.
 <br/>
 </div>
 
