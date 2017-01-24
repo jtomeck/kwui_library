@@ -8,6 +8,14 @@ layout: pattern
 
 <div class="pl-versions">
 <div class="pl-panel">
+        <h4>1.5.3 - Jan 24, 2017 <a href="{{site.repository.url}}/releases/tag/v1.5.3">(Download)</a></h4>
+        <span class="label subtle label-success">UPDATED</span>
+        <ul>
+            <li>Updated package dependencies to latest versions to fix depreciated issues</li>
+            <li>Various language/guidance changes</li>
+        </ul>
+</div>
+<div class="pl-panel">
         <h4>1.5.2 - Aug 26, 2016 <a href="{{site.repository.url}}/releases/tag/v1.5.2">(Download)</a></h4>
         <span class="label subtle label-success">UPDATED</span>
         <ul>
