@@ -139,7 +139,7 @@ For dates/times associated with user generated data (e.g., notes, documents), us
 <div class="pl-pattern" style="border:orange">
 ### Deprecated
 
-##### The patterns below are deprecated. 
+##### The patterns below are deprecated for external (public) facing applications. Internal (non-public facing) applications may use these formats at their discretion.
 
 In some limited circumstances these are still acceptable to use (e.g. legacy or internal), but please ensure you are using the current standardized date format above for publically accessible applications.
 
