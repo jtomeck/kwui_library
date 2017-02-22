@@ -162,7 +162,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.numeric.extensions.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.phone.extensions.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.regex.extensions.js',
-                    'bower_components/select2/select2.js',
+                    'bower_components/select2/dist/js/select2.js',
                     'bower_components/nouislider/distribute/jquery.nouislider.all.min.js',
                     'bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js',
                     'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js'],
@@ -183,7 +183,7 @@ module.exports = function (grunt) {
                 src: [
                     'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css',
                     'bower_components/font-awesome/css/font-awesome.css',
-                    'bower_components/select2/select2.css',
+                    'bower_components/select2/dist/css/select2.css',
                     'bower_components/nouislider/distribute/jquery.nouislider.min.css',
                     'bower_components/nouislider/distribute/jquery.nouislider.pips.min.css'
                 ],
@@ -261,7 +261,7 @@ module.exports = function (grunt) {
         zip: {
             '<%= paths.downloads %>/usptostrap-<%= config.version %>.zip': ['<%= paths.downloads %>/**/*']
         },
-        
+
         //Jekyll Tasks
         jekyll: {
             release : {
@@ -283,7 +283,7 @@ module.exports = function (grunt) {
         'copy:dist',
         'zip'
     ]);
-    
+
     // Use caution, this will overwrite files.
     //This will overwrite the 1x folder
     grunt.registerTask('doversionedrelease', [
