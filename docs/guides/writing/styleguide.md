@@ -6,13 +6,13 @@ title: "Usability testing"
 
 <h3>USPTO writing style guide</h3>
 
-The USPTO's official writing style guide is based on the Associate Press Stylebook. Here are some styles commonly used or incorrectly used here at the USPTO, or styles that are unique to the USPTO.
+The USPTO's official writing style guide is based on the <a href="http://www.apstylebook.com">Associate Press Stylebook</a>. Here are some styles commonly used or incorrectly used here at the USPTO, or styles that are unique to the USPTO.
 
 <br><br>
 </div>
 
 <div class="pl-pattern">
-<h5 class="text-muted normal">Is there something you want added or removed? Do you have a style question not included here? <a href="mailto:contactUXD@uspto.gov"> Email the User Experience Division </a> or contribute in GitHub.</h5>
+<h5 class="text-muted normal">Is there something you want added or removed? Do you have a writing style question not included here? <a href="mailto:contactUXD@uspto.gov"> Email the User Experience Division </a> or contribute in GitHub.</h5>
 </div>
 
 <div class="pl-pattern">
