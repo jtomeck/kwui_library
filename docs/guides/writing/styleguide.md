@@ -1,5 +1,5 @@
 ---
-title: "Usability testing"
+title: "USPTO writing style guide - USPTO UI Design Library"
 ---
 
 <div class="pl-pattern">
@@ -23,6 +23,19 @@ The USPTO's official writing style guide is based on the <a href="http://www.aps
 
 <div class="pl-pattern">
 <br>
+### Capitalization
+<br>
+</div>
+
+
+<div class="pl-pattern">
+<br>
+### Commas
+<br>
+</div>
+
+<div class="pl-pattern">
+<br>
 ### Dashes and hyphens
 <br>
 </div>
@@ -30,6 +43,12 @@ The USPTO's official writing style guide is based on the <a href="http://www.aps
 <div class="pl-pattern">
 <br>
 ### Email
+<br>
+</div>
+
+<div class="pl-pattern">
+<br>
+### Headlines, subheadlines, and titles
 <br>
 </div>
 
@@ -60,6 +79,12 @@ The USPTO's official writing style guide is based on the <a href="http://www.aps
 <div class="pl-pattern">
 <br>
 ### Position titles
+<br>
+</div>
+
+<div class="pl-pattern">
+<br>
+### Titles, headlines, and subheadlines
 <br>
 </div>
 
