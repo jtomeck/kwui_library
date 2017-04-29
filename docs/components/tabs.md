@@ -12,11 +12,12 @@ User's need to flip between multiple focused panes/views of content.
 Tabs manage stacked panes of content, giving the users the ability to view only the content pane they are interested in. Each tab button has a corresponding content pane. Tabs build on a real world metaphor. The selected state is reinforced with the tab metaphor of a folder physically in front of the others in the set.
 
 #### Basic functionality
-- You have multiple categories/views/panes of content, but there is the need to only show one pane at a time.
+- You have multiple categories, views, and panes of content, but there is the need to only show one pane at a time.
 - Tabs are listed in a horizontal row.
 - Avoid overflowing tabs to new lines.
 - Tab titles should be short and predictable.
 - Tab buttons can contain icons, text, both, and even dropdowns.
+- Tab headings are sentence case. Only the first word and proper nouns are capitalized.
 
 &nbsp;
 
@@ -29,9 +30,9 @@ The selected tab color should be the same color as the tab content.
 {::nomarkdown}
 <div class="pl-preview">
 <ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
-  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a role="tab">Disabled</a></li>
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Active cases</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Logged files</a></li>
+  <li class="disabled"><a role="tab">Inactive cases</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
