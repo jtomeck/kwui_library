@@ -1,14 +1,14 @@
 ---
-title: "USPTO writing style guide - USPTO UI Design Library"
+title: "USPTO Writing Style Guide - USPTO UI Design Library"
 ---
 
 <div class="pl-pattern">
 
-<h3>USPTO writing style guide</h3>
+<h3>USPTO Writing Styleguide</h3>
 
-The USPTO's official writing style guide is based on the <a href="http://www.apstylebook.com">Associate Press Stylebook</a>. Here are some styles commonly used or incorrectly used here at the USPTO, or styles that are unique to the USPTO.
+The official USPTO Writing Style Guide is based on the <a href="http://www.apstylebook.com">Associate Press Stylebook</a>. If you are author content for the USPTO, your business unit should purchase an online AP Stylebook account or the latest paper AP Stylebook edition. The Stylebook is continually changing, so please don't reference an older edition. 
 
-<br><br>
+Here are commonly used styles used at the USPTO, styles that are often incorrectly used, and styles that are unique to the USPTO.
 </div>
 
 <div class="pl-pattern">
@@ -32,6 +32,12 @@ The USPTO's official writing style guide is based on the <a href="http://www.aps
 <br>
 ### Commas
 <br>
+In sequences within sentences, use a comma before the concluding conjunction in the last sequence. These are called serial commas. Do not use a comma between words that convey a single unit. Use a comma after an introductory prepositional phrase, in most cases. Also, use a comma after introductory adverbs in a sentence.
+<br>
+#### Examples
+- I like bread, milk, waffles and syrup, cereal, and toast.
+- In addition, I like pancakes.
+- Therefore, I can eat at any American diner.
 </div>
 
 <div class="pl-pattern">
