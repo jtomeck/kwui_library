@@ -40,9 +40,22 @@ title: "Icons"
 </div>
 {:/nomarkdown}
 
-#### Sizes
-- Icons can vary in size
+#### Sizes 
+- Icons can vary in size  
 - When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens
+- Icons may be scaled by adding the classes below: (note: scaled icons may require additional styling) <span class="label label-info">BETA</span>
+
+{::nomarkdown}
+
+<div class="row" style="max-width: 900px;">    
+    <div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-2x</div><i class="icon icon-thumbs-o-up icon-2x"></i></div>
+	<div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-3x</div><i class="icon icon-thumbs-o-up icon-3x"></i></div>
+	<div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-4x</div><i class="icon icon-thumbs-o-up icon-4x"></i></div>
+	<div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-5x</div><i class="icon icon-thumbs-o-up icon-5x"></i></div>
+	<div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-6x</div><i class="icon icon-thumbs-o-up icon-6x"></i></div>
+	<div class="col-xs-6 col-sm-4 col-md-2 text-center"><div class="text-muted">.icon-10x</div><i class="icon icon-thumbs-o-up icon-10x"></i></div>
+</div>
+{:/nomarkdown}
 
 #### Usage
 - Due to some organizations and browser configurations blocking web font downloads, the design library serves icons as an svg sprite
@@ -59,6 +72,13 @@ title: "Icons"
 
 </div>
 
+
+<div class="pl-pattern">
+### Icon scaling (experimental)
+
+
+
+</div>
 
 <div class="pl-pattern">
 ### Web application icons
