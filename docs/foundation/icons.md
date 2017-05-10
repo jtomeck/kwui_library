@@ -86,7 +86,7 @@ title: "Icons"
 
 {::nomarkdown}
 <div class="row pl-icon-list">
-    <div class="col-md-3 col-sm-4"><i class="icon icon-adjust-5x"></i> icon-adjust</div>
+    <div class="col-md-3 col-sm-4"><i class="icon icon-adjust"></i> icon-adjust</div>
     <div class="col-md-3 col-sm-4"><i class="icon icon-anchor"></i> icon-anchor</div>
     <div class="col-md-3 col-sm-4"><i class="icon icon-archive"></i> icon-archive</div>
     <div class="col-md-3 col-sm-4"><i class="icon icon-area-chart"></i> icon-area-chart</div>
