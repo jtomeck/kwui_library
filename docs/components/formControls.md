@@ -169,6 +169,9 @@ Users must choose between two or more mutually exclusive options.
 </div>
 {:/nomarkdown}
 
+
+
+
 {% highlight html %}
 <div class="radio">
     <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Checked</label>
@@ -180,6 +183,7 @@ Users must choose between two or more mutually exclusive options.
   </label>
 </div>
 {% endhighlight %}
+
 
 #### Inline
 
@@ -208,6 +212,45 @@ Users must choose between two or more mutually exclusive options.
 </label>
 {% endhighlight %}
 
+
+#### Modern <span class="label label-info">BETA</span>
+Image-based radio buttons may be used as an alternative to the default browser interaction by adding <span class="text-muted">.flair</span> 
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosA" value="optionA" checked>
+    <label for="optionsRadiosA">Checked</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosB" value="optionB">
+    <label for="optionsRadiosB">Normal</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosC" value="optionC" disabled>
+    <label for="optionsRadiosC">Disabled</label>
+</div>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosA" value="optionA" checked>
+    <label for="optionsRadiosA">Checked</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosB" value="optionB">
+    <label for="optionsRadiosB">Normal</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosC" value="optionC" disabled>
+    <label for="optionsRadiosC">Disabled</label>
+</div>
+{% endhighlight %}
+
+
+
+
 </div>
 
 <div class="pl-pattern">
@@ -233,7 +276,7 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 {::nomarkdown}
 <div class="pl-preview">
 <div class="checkbox">
-  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Checked</label>
+  <label for="optionsCheckboxesE"><input type="checkbox" name="optionsCheckboxesE" id="optionsCheckboxesE" value="option1" checked>Checked</label>
 </div>
 <div class="checkbox">
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2">Normal</label>
@@ -246,6 +289,8 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 </div>
 </div>
 {:/nomarkdown}
+
+
 
 {% highlight html %}
 <div class="checkbox">
@@ -282,6 +327,49 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox2" value="option2"> Normal
 </label>
+{% endhighlight %}
+
+
+
+#### Modern <span class="label label-info">BETA</span>
+Image-based checkboxes may be used as an alternative to the default browser interaction by adding <span class="text-muted">.flair</span>
+
+{::nomarkdown}
+<div class="pl-preview">
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesA" id="optionsCheckboxesA" value="option1" checked>
+	  <label for="optionsCheckboxesA">Checked</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesB" id="optionsCheckboxesB" value="option1">
+	  <label for="optionsCheckboxesB">Normal</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesC" id="optionsCheckboxesC" value="option1" disabled>
+	  <label for="optionsCheckboxesC">Disabled</label>
+	</div>
+</div>
+{:/nomarkdown}
+
+
+{% highlight html %}
+<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesZ" id="optionsCheckboxesZ" value="option1" checked>
+	  <label for="optionsCheckboxesZ">Checked</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesF" id="optionsCheckboxesF" value="option1">
+	  <label for="optionsCheckboxesF">Normal</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesG" id="optionsCheckboxesG" value="option1" disabled>
+	  <label for="optionsCheckboxesG">Disabled</label>
+	</div>
+
 {% endhighlight %}
 
 </div>
