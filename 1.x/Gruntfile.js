@@ -219,11 +219,11 @@ module.exports = function (grunt) {
                     cwd: 'front/vendor/',
                     src: ['html5shiv/*.*', 'matchMedia/*.*'],
                     dest: '<%= paths.assets %>/vendor/'
-                }, { // icon sprite to assets folder
+                }, { // icon sprite and png to assets folder
                     dot: true,
                     expand: true,
                     cwd: 'usptostrap/images/icons',
-                    src: '*.svg',
+                    src: ['*.svg', '*.png'],
                     dest: '<%= paths.assets %>/images/icons'
                 }, { // favicon sprite to assets folder
                     dot: true,
