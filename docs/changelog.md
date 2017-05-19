@@ -8,6 +8,25 @@ layout: pattern
 
 <div class="pl-versions">
 <div class="pl-panel">
+        <h4>1.5.4 - May 19, 2017 <a href="{{site.repository.url}}/releases/tag/v1.5.4">(Download)</a></h4>
+        <span class="label subtle label-success">NEW</span>
+        <ul>
+            <li>Addition of icon scaling mechanism (beta)</li>
+            <li>Addition of modern styled checkbox and radio buttons</li>
+            <li>New 'flair' LESS file for future style enhancements</li>
+            <li>Informational text link added to home page display</li>
+        </ul>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Minor bug and language fixes</li>
+			<li>Select2 bug squashed</li>
+			<li>Updated dependencies to latest stable</li>
+			<li>Retired outdated inspirations</li>
+        </ul>
+        
+</div>
+
+<div class="pl-panel">
         <h4>1.5.3 - Jan 24, 2017 <a href="{{site.repository.url}}/releases/tag/v1.5.3">(Download)</a></h4>
         <span class="label subtle label-success">UPDATED</span>
         <ul>

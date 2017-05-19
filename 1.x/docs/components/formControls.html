@@ -1164,6 +1164,39 @@
 <span class="nt">&lt;/label&gt;</span></code></pre>
   </figure>
 
+  <h4 id="modern-span-classlabel-label-infobetaspan">Modern <span class="label label-info">BETA</span></h4>
+  <p>Image-based radio buttons may be used as an alternative to the default browser interaction by adding <span class="text-muted">.flair</span></p>
+
+<div class="pl-preview">
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosA" value="optionA" checked>
+    <label for="optionsRadiosA">Checked</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosB" value="optionB">
+    <label for="optionsRadiosB">Normal</label>
+</div>
+<div class="radio flair">
+    <input type="radio" name="optionsRadios00" id="optionsRadiosC" value="optionC" disabled>
+    <label for="optionsRadiosC">Disabled</label>
+</div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio flair"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios00"</span> <span class="na">id=</span><span class="s">"optionsRadiosA"</span> <span class="na">value=</span><span class="s">"optionA"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsRadiosA"</span><span class="nt">&gt;</span>Checked<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio flair"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios00"</span> <span class="na">id=</span><span class="s">"optionsRadiosB"</span> <span class="na">value=</span><span class="s">"optionB"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsRadiosB"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio flair"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"optionsRadios00"</span> <span class="na">id=</span><span class="s">"optionsRadiosC"</span> <span class="na">value=</span><span class="s">"optionC"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsRadiosC"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </figure>
+
 </div>
 
 <div class="pl-pattern">
@@ -1190,7 +1223,7 @@
 
 <div class="pl-preview">
 <div class="checkbox">
-  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Checked</label>
+  <label for="optionsCheckboxesE"><input type="checkbox" name="optionsCheckboxesE" id="optionsCheckboxesE" value="option1" checked>Checked</label>
 </div>
 <div class="checkbox">
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2">Normal</label>
@@ -1235,6 +1268,43 @@
 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span> Normal
 <span class="nt">&lt;/label&gt;</span></code></pre>
+  </figure>
+
+  <h4 id="modern-span-classlabel-label-infobetaspan-1">Modern <span class="label label-info">BETA</span></h4>
+  <p>Image-based checkboxes may be used as an alternative to the default browser interaction by adding <span class="text-muted">.flair</span></p>
+
+<div class="pl-preview">
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesA" id="optionsCheckboxesA" value="option1" checked>
+	  <label for="optionsCheckboxesA">Checked</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesB" id="optionsCheckboxesB" value="option1">
+	  <label for="optionsCheckboxesB">Normal</label>
+	</div>
+	
+	<div class="checkbox flair">
+	  <input type="checkbox" name="optionsCheckboxesC" id="optionsCheckboxesC" value="option1" disabled>
+	  <label for="optionsCheckboxesC">Disabled</label>
+	</div>
+</div>
+
+  <figure class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox flair"</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"optionsCheckboxesZ"</span> <span class="na">id=</span><span class="s">"optionsCheckboxesZ"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsCheckboxesZ"</span><span class="nt">&gt;</span>Checked<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox flair"</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"optionsCheckboxesF"</span> <span class="na">id=</span><span class="s">"optionsCheckboxesF"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsCheckboxesF"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox flair"</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"optionsCheckboxesG"</span> <span class="na">id=</span><span class="s">"optionsCheckboxesG"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+	  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"optionsCheckboxesG"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;/div&gt;</span></code></pre>
   </figure>
 
 </div>

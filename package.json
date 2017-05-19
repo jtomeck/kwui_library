@@ -1,6 +1,6 @@
 {
   "name": "USPTOPatternLibrary",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "repository": {
     "type:": "git",
     "url": "https://github.com/uspto/designpatterns.git"
@@ -35,6 +35,8 @@
     "grunt-zip": "^0.17.1",
     "highlight.js": "^9.9.0",
     "jshint-stylish": "~2.2.1",
+    "less-plugin-functions": "^1.0.0",
+    "less-plugin-sass2less": "^1.1.0",
     "load-grunt-tasks": "~3.5.2",
     "lodash": "~4.17.4",
     "meta-remarkable": "^0.1.0",
