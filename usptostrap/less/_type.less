@@ -75,7 +75,7 @@ dd {
     margin-bottom: 6px;
 }
 
-@media (min-width: @screen-sm) {
+@media (min-width: $screen-sm) {
     .dl-horizontal dd {
         margin-bottom: 0px;
     }
@@ -91,7 +91,7 @@ dd {
 }
 
 .dl-inline {
-    .clearfix();
+    @extend .clearfix();
     dd, dt {
         font-weight: 400;
         float: left;
@@ -120,7 +120,7 @@ dd {
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6,
 .subhead, .title, .headline, .display1, .display2, .display3 {
-    color: @headings-color;
+    color: $headings-color;
 }
 
 h1, h2, h3,
