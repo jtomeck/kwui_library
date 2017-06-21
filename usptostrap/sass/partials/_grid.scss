@@ -1,4 +1,5 @@
 
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid";
 /*override bootstrap to use rem's*/
 .container {
     @include container-fixed;
