@@ -32,8 +32,9 @@
 @import "partials/_breadcrumbs";
 @import "partials/_pagination";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "partials/_labels";
+@import "partials/_badges";
+
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
@@ -67,17 +68,6 @@ older less
 }
 
 
-
-
-
-
-
-//
-//@import "_navs"; // @import "#{$bootstrap-path}/less/navs";
-//@import "_navbar"; // @import "#{$bootstrap-path}/less/navbar";
-//@import "_breadcrumbs"; //@import "#{$bootstrap-path}/less/breadcrumbs";
-//@import "_pagination"; // @import "#{$bootstrap-path}/less/pagination";
-//@import "#{$bootstrap-path}/less/pager";
 //@import "_labels"; // @import "#{$bootstrap-path}/less/labels";
 //@import "_badges"; // @import "#{$bootstrap-path}/less/badges";
 //@import "#{$bootstrap-path}/less/jumbotron";
