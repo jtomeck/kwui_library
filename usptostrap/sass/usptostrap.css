@@ -260,7 +260,7 @@ td, th {
     opacity: .5
 }
 
-.icon:after, .nav-stacked.nav-tree > li .expander.expanded:after, .nav-stacked.nav-tree > li .expander.collapsed:after {
+.icon:after, .nav-stacked.nav-tree > li .expander.expanded:after, .nav-stacked.nav-tree > li .expander.collapsed:after, .alert-icon-info:after, .alert-icon-success:after, .alert-icon-danger:after, .alert-icon-warning:after {
     content: "";
     display: inline-block;
     position: relative;
@@ -269,31 +269,31 @@ td, th {
     background: url("../images/icons/black.svg") no-repeat scroll
 }
 
-.icon.icon-inverse:after, .nav-stacked.nav-tree > li .icon-inverse.expander.expanded:after, .nav-stacked.nav-tree > li .icon-inverse.expander.collapsed:after {
+.icon.icon-inverse:after, .nav-stacked.nav-tree > li .icon-inverse.expander.expanded:after, .nav-stacked.nav-tree > li .icon-inverse.expander.collapsed:after, .icon-inverse.alert-icon-info:after, .icon-inverse.alert-icon-success:after, .icon-inverse.alert-icon-danger:after, .icon-inverse.alert-icon-warning:after {
     background-image: url("../images/icons/white.svg")
 }
 
-.icon.icon-color-success:after, .nav-stacked.nav-tree > li .icon-color-success.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-success.expander.collapsed:after {
+.icon.icon-color-success:after, .nav-stacked.nav-tree > li .icon-color-success.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-success.expander.collapsed:after, .icon-color-success.alert-icon-info:after, .icon-color-success.alert-icon-success:after, .icon-color-success.alert-icon-danger:after, .icon-color-success.alert-icon-warning:after {
     background-image: url("../images/icons/success.svg")
 }
 
-.icon.icon-color-danger:after, .nav-stacked.nav-tree > li .icon-color-danger.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-danger.expander.collapsed:after {
+.icon.icon-color-danger:after, .nav-stacked.nav-tree > li .icon-color-danger.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-danger.expander.collapsed:after, .icon-color-danger.alert-icon-info:after, .icon-color-danger.alert-icon-success:after, .icon-color-danger.alert-icon-danger:after, .icon-color-danger.alert-icon-warning:after {
     background-image: url("../images/icons/danger.svg")
 }
 
-.icon.icon-color-warning:after, .nav-stacked.nav-tree > li .icon-color-warning.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-warning.expander.collapsed:after {
+.icon.icon-color-warning:after, .nav-stacked.nav-tree > li .icon-color-warning.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-warning.expander.collapsed:after, .icon-color-warning.alert-icon-info:after, .icon-color-warning.alert-icon-success:after, .icon-color-warning.alert-icon-danger:after, .icon-color-warning.alert-icon-warning:after {
     background-image: url("../images/icons/warning.svg")
 }
 
-.icon.icon-color-primary:after, .nav-stacked.nav-tree > li .icon-color-primary.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-primary.expander.collapsed:after {
+.icon.icon-color-primary:after, .nav-stacked.nav-tree > li .icon-color-primary.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-primary.expander.collapsed:after, .icon-color-primary.alert-icon-info:after, .icon-color-primary.alert-icon-success:after, .icon-color-primary.alert-icon-danger:after, .icon-color-primary.alert-icon-warning:after {
     background-image: url("../images/icons/primary.svg")
 }
 
-.icon.icon-color-info:after, .nav-stacked.nav-tree > li .icon-color-info.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-info.expander.collapsed:after {
+.icon.icon-color-info:after, .nav-stacked.nav-tree > li .icon-color-info.expander.expanded:after, .nav-stacked.nav-tree > li .icon-color-info.expander.collapsed:after, .icon-color-info.alert-icon-info:after, .icon-color-info.alert-icon-success:after, .icon-color-info.alert-icon-danger:after, .icon-color-info.alert-icon-warning:after {
     background-image: url("../images/icons/info.svg")
 }
 
-.icon.icon-masked:after, .nav-stacked.nav-tree > li .icon-masked.expander.expanded:after, .nav-stacked.nav-tree > li .icon-masked.expander.collapsed:after {
+.icon.icon-masked:after, .nav-stacked.nav-tree > li .icon-masked.expander.expanded:after, .nav-stacked.nav-tree > li .icon-masked.expander.collapsed:after, .icon-masked.alert-icon-info:after, .icon-masked.alert-icon-success:after, .icon-masked.alert-icon-danger:after, .icon-masked.alert-icon-warning:after {
     background-image: url("../images/icons/mask.svg")
 }
 
@@ -987,7 +987,7 @@ td, th {
     background-position: -60px -210px
 }
 
-.icon-check:after {
+.icon-check:after, .alert-icon-success:after {
     width: 14px;
     height: 14px;
     background-position: -90px -210px
@@ -1485,7 +1485,7 @@ td, th {
     background-position: -150px -360px
 }
 
-.icon-exclamation-triangle:after, .icon-warning:after {
+.icon-exclamation-triangle:after, .icon-warning:after, .alert-icon-warning:after {
     width: 14px;
     height: 14px;
     background-position: -180px -360px
@@ -2145,7 +2145,7 @@ td, th {
     background-position: -90px -570px
 }
 
-.icon-info-circle:after {
+.icon-info-circle:after, .alert-icon-info:after {
     width: 12px;
     height: 14px;
     background-position: -120px -570px
@@ -3447,7 +3447,7 @@ td, th {
     background-position: -330px -960px
 }
 
-.icon-times-circle:after {
+.icon-times-circle:after, .alert-icon-danger:after {
     width: 12px;
     height: 14px;
     background-position: -360px -960px
@@ -10184,6 +10184,115 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #2b2a2a
 }
 
+.alert {
+    display: inline-block;
+    width: 100%;
+    padding: 6px 12px;
+    padding: .6rem 1.2rem
+}
+
+.alert .close {
+    margin-top: -3px;
+    margin-top: -.3rem;
+    margin-left: 8px;
+    margin-left: .8rem;
+    margin-right: -3px;
+    margin-right: -.3rem;
+    text-shadow: none
+}
+
+.alert .alert-icon {
+    margin-right: 3px;
+    margin-right: .3rem;
+    width: 18px;
+    width: 1.8rem;
+    margin-left: -4px;
+    margin-left: -.4rem;
+    text-align: center;
+    display: inline-block
+}
+
+.alert .btn {
+    margin: -4px;
+    margin: -.4rem;
+    margin-left: 10px;
+    margin-left: 1rem;
+    text-decoration: underline
+}
+
+.alert-dismissible {
+    padding-right: 32px;
+    padding-right: 3.2rem
+}
+
+.alert-dismissible .close {
+    margin-top: 0
+}
+
+.toast-list .toast {
+    position: relative;
+    border: 1px solid #ddd;
+    border-left-width: 4px;
+    border-radius: 2px;
+    border-radius: .2rem;
+    margin-bottom: 9px;
+    margin-bottom: .9rem;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    padding: 1.2rem
+}
+
+.toast-list .toast.toast-info {
+    border-left-color: #1596D1
+}
+
+.toast-list .toast.toast-primary {
+    border-left-color: #004C97
+}
+
+.toast-list .toast.toast-success {
+    border-left-color: #008139
+}
+
+.toast-list .toast.toast-danger {
+    border-left-color: #AC2B37
+}
+
+.toast-list .toast.toast-warning {
+    border-left-color: #f3d54e
+}
+
+.toast-list .toast.toast-actions {
+    margin-top: 6px;
+    margin-top: .6rem;
+    padding-top: 0;
+    display: inline-block;
+    width: 100%
+}
+
+.toast-list .toast.toast-actions > .btn-link {
+    padding: 0;
+    margin-right: 8px;
+    margin-right: .8rem
+}
+
+.toast-list .toast.toast-footer {
+    background: #eee;
+    margin: 10px -12px -12px -12px;
+    margin: 1rem -1.2rem -1.2rem -1.2rem;
+    padding: 8px 5px 8px 10px;
+    padding: .8rem .5rem .8rem 1rem
+}
+
+.toast-list .toast.toast .close {
+    margin-top: -3px;
+    margin-top: -.3rem;
+    margin-left: 8px;
+    margin-left: .8rem
+}
+
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 40px 0
@@ -10279,6 +10388,24 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)
+}
+
+.progress {
+    box-shadow: inset 0 0px 0px 1px rgba(0, 0, 0, 0.1);
+    height: 12px;
+    height: 1.2rem
+}
+
+.progress-bar {
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+    box-shadow: none
+}
+
+.progress-label {
+    margin-bottom: 6px;
+    margin-bottom: .6rem
 }
 
 .media {
