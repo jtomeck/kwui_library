@@ -99,7 +99,7 @@
 
     &-eye {
         &:after {
-           //.icon-eye2 doesn't exist
+            //.icon-eye2 doesn't exist
             // @extend .icon-eye2;
         }
     }
@@ -5372,159 +5372,6 @@
         }
     }
 
-    /* Large IP Icons (Noun Project) */
-    &-utility-patent {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: 0 0;
-        }
-    }
-
-    &-patent-pending {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -64px 0;
-        }
-    }
-
-    &-plant-patent {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -128px 0;
-        }
-    }
-
-    &-pro-se {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -192px 0;
-        }
-    }
-
-    &-invention {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -256px 0;
-        }
-    }
-
-    &-maker {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -320px 0;
-        }
-    }
-
-    &-intellectual-property {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -384px 0;
-        }
-    }
-
-    &-design-patent {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -448px 0;
-        }
-    }
-
-    &-prior-art {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -512px 0;
-        }
-    }
-
-    &-small-inventor {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -576px 0;
-        }
-    }
-
-    &-large-inventor {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -640px 0;
-        }
-    }
-
-    &-infringement {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -704px 0;
-        }
-    }
-
-    &-trade-secret {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -768px 0;
-        }
-    }
-
-    &-micro-entity-inventor {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -832px 0;
-        }
-    }
-
-    &-service-mark {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -896px 0;
-        }
-    }
-
-    &-counterfeit {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -960px 0;
-        }
-    }
-
-    &-ptotrademark {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: 0 -64px;
-        }
-    }
-
-    &-stem {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -64px -64px;
-        }
-    }
-
-    &-pro-bono {
-        &:after {
-            width: 48px;
-            height: 48px;
-            background-position: -128px -64px;
-        }
-    }
-
     /* Icon Scaling - (Experimental) */
     &-2x, &-3x, &-4x, &-5x, &-6x, &-10x {
         display: inline-block;
@@ -5574,6 +5421,160 @@
             vertical-align: middle;
             background: url("../images/icons/IPicons-large.svg") no-repeat scroll;
         }
+        &.icon {
+            /* Large IP Icons (Noun Project) */
+            &-utility-patent {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: 0 0;
+                }
+            }
+
+            &-patent-pending {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -64px 0;
+                }
+            }
+
+            &-plant-patent {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -128px 0;
+                }
+            }
+
+            &-pro-se {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -192px 0;
+                }
+            }
+
+            &-invention {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -256px 0;
+                }
+            }
+
+            &-maker {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -320px 0;
+                }
+            }
+
+            &-intellectual-property {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -384px 0;
+                }
+            }
+
+            &-design-patent {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -448px 0;
+                }
+            }
+
+            &-prior-art {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -512px 0;
+                }
+            }
+
+            &-small-inventor {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -576px 0;
+                }
+            }
+
+            &-large-inventor {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -640px 0;
+                }
+            }
+
+            &-infringement {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -704px 0;
+                }
+            }
+
+            &-trade-secret {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -768px 0;
+                }
+            }
+
+            &-micro-entity-inventor {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -832px 0;
+                }
+            }
+
+            &-service-mark {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -896px 0;
+                }
+            }
+
+            &-counterfeit {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -960px 0;
+                }
+            }
+
+            &-ptotrademark {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: 0 -64px;
+                }
+            }
+
+            &-stem {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -64px -64px;
+                }
+            }
+
+            &-pro-bono {
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    background-position: -128px -64px;
+                }
+            }
+        }
     }
     /*
 OC Icons @ 16px
@@ -5586,433 +5587,426 @@ OC Icons @ 16px
             @include rem(top, 2px);
             vertical-align: middle;
             background: url("../images/icons/OCicons.svg") no-repeat scroll;
+            width: 16px;
+            height: 16px;
+        }
+
+        /* OC Icons  */
+        &.oc {
+
+            &-access-dav {
+                &:after {
+                    background-position: 0 0;
+                }
+            }
+
+            &-add-page-icon {
+                &:after {
+                    background-position: -32px 0;
+                }
+            }
+
+            &-add-preferred-reviewer-icon {
+                &:after {
+                    background-position: -64px 0;
+                }
+            }
+
+            &-approve-icon {
+                &:after {
+                    background-position: -96px 0;
+                }
+            }
+
+            &-bold-type-icon {
+                &:after {
+                    background-position: -128px 0;
+                }
+            }
+
+            &-clear-form-fields-icon {
+                &:after {
+                    background-position: -160px 0;
+                }
+            }
+
+            &-close-set {
+                &:after {
+                    background-position: -192px 0;
+                }
+            }
+
+            &-close-tab-hover-icon {
+                &:after {
+                    background-position: -224px 0;
+                }
+            }
+
+            &-close-tab-icon {
+                &:after {
+                    background-position: -256px 0;
+                }
+            }
+
+            &-collapse-set {
+                &:after {
+                    background-position: -288px 0;
+                }
+            }
+
+            &-collapse-toggle-icon {
+                &:after {
+                    background-position: -320px 0;
+                }
+            }
+
+            &-console-icon {
+                &:after {
+                    background-position: -352px 0;
+                }
+            }
+
+            &-create-new-icon {
+                &:after {
+                    background-position: -384px 0;
+                }
+            }
+
+            &-create-scenario-icon {
+                &:after {
+                    background-position: -416px 0;
+                }
+            }
+
+            &-delete-page-icon {
+                &:after {
+                    background-position: -448px 0;
+                }
+            }
+
+            &-document-add-icon {
+                &:after {
+                    background-position: -480px 0;
+                }
+            }
+
+            &-document-delete-icon {
+                &:after {
+                    background-position: 0 -32px;
+                }
+            }
+
+            &-document-icon {
+                &:after {
+                    background-position: -32px -32px;
+                }
+            }
+
+            &-document-rename-icon {
+                &:after {
+                    background-position: -64px -32px;
+                }
+            }
+
+            &-dropdown-icon {
+                &:after {
+                    background-position: -96px -32px;
+                }
+            }
+
+            &-expand-set {
+                &:after {
+                    background-position: -128px -32px;
+                }
+            }
+
+            &-expand-toggle-icon {
+                &:after {
+                    background-position: -160px -32px;
+                }
+            }
+
+            &-folder-view-icon {
+                &:after {
+                    background-position: -192px -32px;
+                }
+            }
+
+            &-gadget-actions-icon {
+                &:after {
+                    background-position: -224px -32px;
+                }
+            }
+
+            &-gadgets-briefcase-icon {
+                &:after {
+                    background-position: -256px -32px;
+                }
+            }
+
+            &-gadgets-briefcase2-icon {
+                &:after {
+                    background-position: -288px -32px;
+                }
+            }
+
+            &-help-icon {
+                &:after {
+                    background-position: -320px -32px;
+                }
+            }
+
+            &-html-edit-icon {
+                &:after {
+                    background-position: -352px -32px;
+                }
+            }
+
+            &-html-icon {
+                &:after {
+                    background-position: -384px -32px;
+                }
+            }
+
+            &-ifw-reference-icon {
+                &:after {
+                    background-position: -416px -32px;
+                }
+            }
+
+            &-import-manager-icon {
+                &:after {
+                    background-position: -448px -32px;
+                }
+            }
+
+            &-italic-type-icon {
+                &:after {
+                    background-position: -480px -32px;
+                }
+            }
+
+            &-list-view-icon {
+                &:after {
+                    background-position: 0 -64px;
+                }
+            }
+
+            &-mail-set-icon {
+                &:after {
+                    background-position: -32px -64px;
+                }
+            }
+
+            &-mail-set2-icon {
+                &:after {
+                    background-position: -64px -64px;
+                }
+            }
+
+            &-make-special-icon {
+                &:after {
+                    background-position: -96px -64px;
+                }
+            }
+
+            &-member-list-icon {
+                &:after {
+                    background-position: -128px -64px;
+                }
+            }
+
+            &-notification-icon {
+                &:after {
+                    background-position: -160px -64px;
+                }
+            }
+
+            &-oacs-archive-active-icon {
+                &:after {
+                    background-position: -192px -64px;
+                }
+            }
+
+            &-oacs-archive-icon {
+                &:after {
+                    background-position: -224px -64px;
+                }
+            }
+
+            &-opener-icon {
+                &:after {
+                    background-position: -256px -64px;
+                }
+            }
+
+            &-options-gear-icon {
+                &:after {
+                    background-position: -288px -64px;
+                }
+            }
+
+            &-pdf-annotate-einitials {
+                &:after {
+                    background-position: -320px -64px;
+                }
+            }
+
+            &-pdf-annotate-esignature {
+                &:after {
+                    background-position: -352px -64px;
+                }
+            }
+
+            &-pdf-edit-icon {
+                &:after {
+                    background-position: -384px -64px;
+                }
+            }
+
+            &-pdf-icon {
+                &:after {
+                    background-position: -416px -64px;
+                }
+            }
+
+            &-postforconsult-icon {
+                &:after {
+                    background-position: -448px -64px;
+                }
+            }
+
+            &-postforcredit-icon {
+                &:after {
+                    background-position: -480px -64px;
+                }
+            }
+
+            &-preview-icon {
+                &:after {
+                    background-position: 0 -96px;
+                }
+            }
+
+            &-print-set-icon {
+                &:after {
+                    background-position: -32px -96px;
+                }
+            }
+
+            &-refresh-icon {
+                &:after {
+                    background-position: -64px -96px;
+                }
+            }
+
+            &-remove-preferred-reviewer-icon {
+                &:after {
+                    background-position: -96px -96px;
+                }
+            }
+
+            &-remove-reviewer-icon {
+                &:after {
+                    background-position: -128px -96px;
+                }
+            }
+
+            &-reports-icon {
+                &:after {
+                    background-position: -160px -96px;
+                }
+            }
+
+            &-resettodefault-icon {
+                &:after {
+                    background-position: -192px -96px;
+                }
+            }
+
+            &-return-icon {
+                &:after {
+                    background-position: -224px -96px;
+                }
+            }
+
+            &-save-close-icon {
+                &:after {
+                    background-position: -256px -96px;
+                }
+            }
+
+            &-search-icon {
+                &:after {
+                    background-position: -288px -96px;
+                }
+            }
+
+            &-set-delete-icon {
+                &:after {
+                    background-position: -320px -96px;
+                }
+            }
+
+            &-set-rename-icon {
+                &:after {
+                    background-position: -352px -96px;
+                }
+            }
+
+            &-setasdefault-icon {
+                &:after {
+                    background-position: -384px -96px;
+                }
+            }
+
+            &-spe-mgmt-db-icon {
+                &:after {
+                    background-position: -416px -96px;
+                }
+            }
+
+            &-status-icon {
+                &:after {
+                    background-position: -480px -96px;
+                }
+            }
+
+            &-submit-icon {
+                &:after {
+                    background-position: 0 -128px;
+                }
+            }
+
+            &-tab-slope-left-icon {
+                &:after {
+                    background-position: -32px -128px;
+                }
+            }
+
+            &-tab-slope-right-icon {
+                &:after {
+                    background-position: -64px -128px;
+                }
+            }
+
+            &-word-icon {
+                &:after {
+                    background-position: -96px -128px;
+                }
+            }
+
+            &-wordedit-icon {
+                &:after {
+                    background-position: -128px -128px;
+                }
+            }
+
+            &-zoom-handle-icon {
+                &:after {
+                    background-position: -160px -128px;
+                }
+            }
         }
     }
 }
-
-/* OC Icons  */
-.oc {
-    &:after {
-        width: 16px;
-        height: 16px;
-    }
-    &-access-dav {
-        &:after {
-            background-position: 0 0;
-        }
-    }
-
-    &-add-page-icon {
-        &:after {
-            background-position: -32px 0;
-        }
-    }
-
-    &-add-preferred-reviewer-icon {
-        &:after {
-            background-position: -64px 0;
-        }
-    }
-
-    &-approve-icon {
-        &:after {
-            background-position: -96px 0;
-        }
-    }
-
-    &-bold-type-icon {
-        &:after {
-            background-position: -128px 0;
-        }
-    }
-
-    &-clear-form-fields-icon {
-        &:after {
-            background-position: -160px 0;
-        }
-    }
-
-    &-close-set {
-        &:after {
-            background-position: -192px 0;
-        }
-    }
-
-    &-close-tab-hover-icon {
-        &:after {
-            background-position: -224px 0;
-        }
-    }
-
-    &-close-tab-icon {
-        &:after {
-            background-position: -256px 0;
-        }
-    }
-
-    &-collapse-set {
-        &:after {
-            background-position: -288px 0;
-        }
-    }
-
-    &-collapse-toggle-icon {
-        &:after {
-            background-position: -320px 0;
-        }
-    }
-
-    &-console-icon {
-        &:after {
-            background-position: -352px 0;
-        }
-    }
-
-    &-create-new-icon {
-        &:after {
-            background-position: -384px 0;
-        }
-    }
-
-    &-create-scenario-icon {
-        &:after {
-            background-position: -416px 0;
-        }
-    }
-
-    &-delete-page-icon {
-        &:after {
-            background-position: -448px 0;
-        }
-    }
-
-    &-document-add-icon {
-        &:after {
-            background-position: -480px 0;
-        }
-    }
-
-    &-document-delete-icon {
-        &:after {
-            background-position: 0 -32px;
-        }
-    }
-
-    &-document-icon {
-        &:after {
-            background-position: -32px -32px;
-        }
-    }
-
-    &-document-rename-icon {
-        &:after {
-            background-position: -64px -32px;
-        }
-    }
-
-    &-dropdown-icon {
-        &:after {
-            background-position: -96px -32px;
-        }
-    }
-
-    &-expand-set {
-        &:after {
-            background-position: -128px -32px;
-        }
-    }
-
-    &-expand-toggle-icon {
-        &:after {
-            background-position: -160px -32px;
-        }
-    }
-
-    &-folder-view-icon {
-        &:after {
-            background-position: -192px -32px;
-        }
-    }
-
-    &-gadget-actions-icon {
-        &:after {
-            background-position: -224px -32px;
-        }
-    }
-
-    &-gadgets-briefcase-icon {
-        &:after {
-            background-position: -256px -32px;
-        }
-    }
-
-    &-gadgets-briefcase2-icon {
-        &:after {
-            background-position: -288px -32px;
-        }
-    }
-
-    &-help-icon {
-        &:after {
-            background-position: -320px -32px;
-        }
-    }
-
-    &-html-edit-icon {
-        &:after {
-            background-position: -352px -32px;
-        }
-    }
-
-    &-html-icon {
-        &:after {
-            background-position: -384px -32px;
-        }
-    }
-
-    &-ifw-reference-icon {
-        &:after {
-            background-position: -416px -32px;
-        }
-    }
-
-    &-import-manager-icon {
-        &:after {
-            background-position: -448px -32px;
-        }
-    }
-
-    &-italic-type-icon {
-        &:after {
-            background-position: -480px -32px;
-        }
-    }
-
-    &-list-view-icon {
-        &:after {
-            background-position: 0 -64px;
-        }
-    }
-
-    &-mail-set-icon {
-        &:after {
-            background-position: -32px -64px;
-        }
-    }
-
-    &-mail-set2-icon {
-        &:after {
-            background-position: -64px -64px;
-        }
-    }
-
-    &-make-special-icon {
-        &:after {
-            background-position: -96px -64px;
-        }
-    }
-
-    &-member-list-icon {
-        &:after {
-            background-position: -128px -64px;
-        }
-    }
-
-    &-notification-icon {
-        &:after {
-            background-position: -160px -64px;
-        }
-    }
-
-    &-oacs-archive-active-icon {
-        &:after {
-            background-position: -192px -64px;
-        }
-    }
-
-    &-oacs-archive-icon {
-        &:after {
-            background-position: -224px -64px;
-        }
-    }
-
-    &-opener-icon {
-        &:after {
-            background-position: -256px -64px;
-        }
-    }
-
-    &-options-gear-icon {
-        &:after {
-            background-position: -288px -64px;
-        }
-    }
-
-    &-pdf-annotate-einitials {
-        &:after {
-            background-position: -320px -64px;
-        }
-    }
-
-    &-pdf-annotate-esignature {
-        &:after {
-            background-position: -352px -64px;
-        }
-    }
-
-    &-pdf-edit-icon {
-        &:after {
-            background-position: -384px -64px;
-        }
-    }
-
-    &-pdf-icon {
-        &:after {
-            background-position: -416px -64px;
-        }
-    }
-
-    &-postforconsult-icon {
-        &:after {
-            background-position: -448px -64px;
-        }
-    }
-
-    &-postforcredit-icon {
-        &:after {
-            background-position: -480px -64px;
-        }
-    }
-
-    &-preview-icon {
-        &:after {
-            background-position: 0 -96px;
-        }
-    }
-
-    &-print-set-icon {
-        &:after {
-            background-position: -32px -96px;
-        }
-    }
-
-    &-refresh-icon {
-        &:after {
-            background-position: -64px -96px;
-        }
-    }
-
-    &-remove-preferred-reviewer-icon {
-        &:after {
-            background-position: -96px -96px;
-        }
-    }
-
-    &-remove-reviewer-icon {
-        &:after {
-            background-position: -128px -96px;
-        }
-    }
-
-    &-reports-icon {
-        &:after {
-            background-position: -160px -96px;
-        }
-    }
-
-    &-resettodefault-icon {
-        &:after {
-            background-position: -192px -96px;
-        }
-    }
-
-    &-return-icon {
-        &:after {
-            background-position: -224px -96px;
-        }
-    }
-
-    &-save-close-icon {
-        &:after {
-            background-position: -256px -96px;
-        }
-    }
-
-    &-search-icon {
-        &:after {
-            background-position: -288px -96px;
-        }
-    }
-
-    &-set-delete-icon {
-        &:after {
-            background-position: -320px -96px;
-        }
-    }
-
-    &-set-rename-icon {
-        &:after {
-            background-position: -352px -96px;
-        }
-    }
-
-    &-setasdefault-icon {
-        &:after {
-            background-position: -384px -96px;
-        }
-    }
-
-    &-spe-mgmt-db-icon {
-        &:after {
-            background-position: -416px -96px;
-        }
-    }
-
-    &-status-icon {
-        &:after {
-            background-position: -480px -96px;
-        }
-    }
-
-    &-submit-icon {
-        &:after {
-            background-position: 0 -128px;
-        }
-    }
-
-    &-tab-slope-left-icon {
-        &:after {
-            background-position: -32px -128px;
-        }
-    }
-
-    &-tab-slope-right-icon {
-        &:after {
-            background-position: -64px -128px;
-        }
-    }
-
-    &-word-icon {
-        &:after {
-            background-position: -96px -128px;
-        }
-    }
-
-    &-wordedit-icon {
-        &:after {
-            background-position: -128px -128px;
-        }
-    }
-
-    &-zoom-handle-icon {
-        &:after {
-            background-position: -160px -128px;
-        }
-    }
-
-}
-
-
-
-
-
