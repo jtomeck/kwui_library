@@ -192,3 +192,7 @@ $table-header-sortable-hover-bg:    darken($table-bg-header, 6%);
 $keyline-color:                     $gray-47;
 
 // Custom mixins
+
+
+
+$input-height-base:              (floor(($font-size-base * $line-height-base)) + $padding-base-vertical * 2) + 2;
