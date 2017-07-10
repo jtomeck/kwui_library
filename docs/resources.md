@@ -42,7 +42,7 @@ layout: pattern
             <div class="col-sm-12 col-lg-12">
                 <h4 class="margin-top-0">USPTO Axure widget library</h4>
                 <p>This library allows for rapid wireframing of interactions using the look and feel of the USPTO pattern library. The USPTO widget library can be used in Axure or other compatible software.</p>
-               <a href="https://github.com/USPTO/designpatterns/tree/gh-pages/resources/" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
+               <a href="https://github.com/USPTO/designpatterns/tree/gh-pages/resources/" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure widget library</a>
                 <div class="margin-top-1 small">Current release version: <strong>0.1.0</strong></div>
             </div>
         </div>
