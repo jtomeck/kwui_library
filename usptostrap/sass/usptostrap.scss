@@ -8,6 +8,7 @@
 @import "partials/_normalize";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_print";
 @import "partials/_icons";
+
 // Core CSS
 @import "partials/_scaffolding";
 @import "partials/_type";
@@ -16,6 +17,7 @@
 @import "partials/_tables";
 @import "partials/_forms";
 @import "partials/_buttons";
+
 // Components
 @import "partials/_component-animations";
 @import "partials/_dropdowns";
@@ -38,49 +40,34 @@
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
 // Bootstrap 4 backports
 @import "partials/_cards";
+
 // Components w/ JavaScript
 @import "partials/_modals";
 @import "partials/_tooltip";
 @import "partials/_popovers";
 @import "partials/_carousel";
+
+// Custom 3rd party lib styles
+@import "vendor/_datepicker";
+@import "vendor/_nouislider";
+@import "vendor/_nouislider";
+@import "vendor/_timepicker";
+
+// Custom components
+@import "custom/_filters";
+@import "custom/_sliders";
+@import "custom/_load-spinners";
+@import "custom/_accordions";
+@import "custom/_tags";
+
+
 // Utility classes
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-.form-control-feedback {
-    height: floor(($font-size-base * $line-height-base)) + $padding-base-vertical * 2;
-    width: $line-height-computed;
-    top: $padding-base-vertical;
-    bottom: $padding-base-vertical * 2;
-left: floor(($font-size-base * $line-height-base));
+// Custom flair
+@import "partials/_flair"; // @import flair styling file
 
-}
-
-/*==================================
-older less
-===================*/
-
-//@import "#{$bootstrap-path}/less/carousel";
-//
-//// Custom 3rd party lib styles
-//@import "vendor/_select2";
-//@import "vendor/_datepicker";
-//@import "vendor/_nouislider";
-//@import "vendor/_timepicker";
-//
-//// Custom components
-//@import "custom/_filters";
-//@import "custom/_sliders";
-//@import "custom/_load-spinners";
-//@import "custom/_accordions";
-//@import "custom/_tags";
-//
-//// Utility classes
-//@import "_utilities"; // @import "#{$bootstrap-path}/less/utilities";
-//@import "#{$bootstrap-path}/sass/responsive-utilities";
-//
-//// Custom flair
-//@import "_flair"; // @import flair styling file
-//

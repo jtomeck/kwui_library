@@ -85,7 +85,7 @@ output {
 
     .form-control-static {
         @include rem(height, $input-height-small);
-        @include rem(min-height, ($line-height-computed + $font-size-small))
+        @include rem(min-height, ($line-height-computed + $font-size-small));
         @include rem(padding, ($padding-small-vertical + 1) $padding-small-horizontal);
         @include rem(font-size, $font-size-small);
     }
