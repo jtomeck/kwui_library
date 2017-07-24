@@ -37,9 +37,9 @@
 @import "partials/_media";
 @import "partials/_list-group";
 @import "partials/_panels";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "partials/_responsive-embed";
+@import "partials/_wells";
+@import "partials/_close";
 
 // Bootstrap 4 backports
 @import "partials/_cards";
