@@ -63,10 +63,9 @@
 @import "custom/_accordions";
 @import "custom/_tags";
 
-
 // Utility classes
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "partials/_utilities";
+@import "partials/_responsive-utilities";
 
 // Custom flair
 @import "partials/_flair"; // @import flair styling file
