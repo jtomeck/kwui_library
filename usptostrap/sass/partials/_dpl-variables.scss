@@ -193,6 +193,9 @@ $keyline-color:                     $gray-47;
 
 // Custom mixins
 
-
-
+//Bootstrap Sass overwrites to align SASS version with LESS
 $input-height-base:              (floor(($font-size-base * $line-height-base)) + $padding-base-vertical * 2) + 2;
+$border-radius-base:             2px;
+$panel-border-radius:            $border-radius-base;
+$line-height-computed:           floor(($font-size-base * $line-height-base));
+$list-group-border-radius:      $border-radius-base;
