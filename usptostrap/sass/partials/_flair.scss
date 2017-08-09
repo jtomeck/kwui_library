@@ -25,13 +25,13 @@
 }
 
 .ico-r-flair {
-    background-image: url("@{images-path}/icons/radio-flair.png");
+    background-image: url(#{$images-path}/icons/radio-flair.png);
     background-repeat: no-repeat;
     background-size: 20px auto;
 }
 
 .ico-c-flair {
-    background-image: url("@{images-path}/icons/checkbox-flair.png");
+    background-image: url(#{$images-path}/icons/checkbox-flair.png);
     background-repeat: no-repeat;
     background-size: 20px auto;
 }

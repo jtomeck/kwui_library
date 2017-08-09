@@ -264,9 +264,13 @@ module.exports = function (grunt) {
                 files: ['front/scripts/{,*/}*.js'],
                 tasks: ['jshint', 'concat:mainjs', 'concat:appDemojs']
             },
-            less: {
-                files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
-                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
+            //less: {
+              //  files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
+              //  tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
+           // },
+            sass: {
+                files: ['usptostrap/sass/**/*.scss', 'front/styles/**/*.scss'],
+                tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
             }
         },
 
@@ -322,10 +326,26 @@ module.exports = function (grunt) {
             ]);
         }
     });
-    grunt.registerTask('buildSassDist', []);
+    // Build SASS release
     // Use caution, this will overwrite files.
     //This will overwrite the 1x folder
-    grunt.registerTask('doversionedrelease', [
+    grunt.registerTask('buildSassDist', [
+	    'clean:dist',
+        'jshint',
+        'sass:dist',
+        'imagemin',
+        'usebanner',
+        'concat',
+        'autoprefixer',
+        'copy:dist',
+        'zip',
+        'jekyll:release',
+        'copy:release'
+    ]);
+    //Build Less release
+    // Use caution, this will overwrite files.
+    //This will overwrite the 1x folder
+    grunt.registerTask('buildLessDist', [
         'clean:dist',
         'jshint',
         'less',
