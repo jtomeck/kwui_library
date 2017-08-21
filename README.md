@@ -52,10 +52,19 @@ bower install
 ```
 ---
 #### Running the documentation
-Build the front-end assets (LESS/CSS/JS) with:
+This project can be built with SASS(Beta) or LESS. The SASS assets are currently in beta and you may encounter minor correctable visual bugs.
+
+To build the front-end assets (LESS/CSS/JS) with:
 ```
 grunt build
 ```
+
+(Beta) To build the front-end assets (SASS/CSS/JS) with:
+```
+grunt buildSass
+```
+ __Note:__ The SASS files require your project to install [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) with NPM. The SASS files are looking for a 'node_modules' folder.
+
 Run the project with Jekyll:
 ```
 jekyll serve
