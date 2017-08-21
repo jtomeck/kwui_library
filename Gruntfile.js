@@ -264,14 +264,14 @@ module.exports = function (grunt) {
                 files: ['front/scripts/{,*/}*.js'],
                 tasks: ['jshint', 'concat:mainjs', 'concat:appDemojs']
             },
-            //less: {
-              //  files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
-              //  tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
-           // },
-            sass: {
-                files: ['usptostrap/sass/**/*.scss', 'front/styles/**/*.scss'],
-                tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
-            }
+            less: {
+                files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
+                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
+            },
+            //sass: {
+               // files: ['usptostrap/sass/**/*.scss', 'front/styles/**/*.scss'],
+               // tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
+          //  }
         },
 
         // Zips up src less files, images, and minified css

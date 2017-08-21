@@ -52,14 +52,14 @@ bower install
 ```
 ---
 #### Running the documentation
-This project can be built with SASS or LESS. The advantages of use the SASS is the added availability of the rem values.
+This project can be built with SASS(Beta) or LESS. The SASS assets are currently in beta and you may encounter minor correctable visual bugs.
 
 To build the front-end assets (LESS/CSS/JS) with:
 ```
 grunt build
 ```
 
-To build the front-end assets (SASS/CSS/JS) with:
+(Beta) To build the front-end assets (SASS/CSS/JS) with:
 ```
 grunt buildSass
 ```

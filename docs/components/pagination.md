@@ -45,6 +45,7 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
         </ul>
     </div>
     <div class="btn-group dropdown">
@@ -89,6 +90,7 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
         </ul>
     </div>
     <div class="btn-group dropdown">
@@ -135,6 +137,7 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
         </ul>
     </div>
     <div class="btn-group dropdown">
@@ -170,6 +173,7 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
         </ul>
     </div>
     <div class="btn-group dropdown">
@@ -302,6 +306,7 @@ These show possible configurations for layouts with limited screen real estate.
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
         </ul>
     </div> <div class="btn-group dropdown">
   <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
@@ -383,6 +388,7 @@ A possible configuration for very narrow/confined layouts.
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
     </ul>
 </div>
 </div>
@@ -411,6 +417,7 @@ A possible configuration for very narrow/confined layouts.
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All items</a></li>
     </ul>
 </div>
 {% endhighlight %}

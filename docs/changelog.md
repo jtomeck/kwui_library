@@ -8,6 +8,23 @@ layout: pattern
 
 <div class="pl-versions">
 <div class="pl-panel">
+        <h4>1.6.0 - August 21, 2017 <a href="{{site.repository.url}}/releases/tag/v1.6.0">(Download)</a></h4>
+        <span class="label subtle label-success">NEW</span>
+        <ul>
+            <li>(Beta)SASS port included in packaged usptostrap.zip </li>
+            <li>Library reworked to accommodate compiling with LESS or SASS</li>
+        </ul>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Pagination patterns updated</li>
+			<li>Misc. bug fixes</li>
+			<li>Build automation updated</li>
+			<li>Project structure updated</li>
+        </ul>
+        
+</div>
+
+<div class="pl-panel">
         <h4>1.5.4 - May 19, 2017 <a href="{{site.repository.url}}/releases/tag/v1.5.4">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
