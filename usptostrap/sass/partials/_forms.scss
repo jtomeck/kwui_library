@@ -210,3 +210,83 @@ output {
         }
     }
 }
+.switch {
+    @include rem(padding-left, 64px);
+    overflow: hidden;
+    position: relative;
+
+    > input {
+        width: 0;
+        &:checked {
+            + label {
+                &:before {
+                    background: $brand-primary;
+                    content: attr(data-on);
+                    @include rem(padding-right, 20px);
+                    padding-left: 0;
+                }
+                &:after {
+                    @include rem(left, -29px);
+                }
+            }
+        }
+        &:focus {
+            + label {
+                &:before {
+                    outline: 2px solid;
+                    outline: 5px auto inherit;
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-offset: 1px;
+                }
+            }
+        }
+
+        &:disabled + label:before {
+            background: mix(#aaa, #fff, 30%);
+        }
+        &:checked:disabled + label:before {
+            background: mix($brand-primary, #fff, 30%);
+        }
+    }
+
+    > label {
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+        margin-bottom: 0;
+        &:before {
+            background: #aaa;
+            @include rem(border-radius, 25px);
+            content: attr(data-off);
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            @include rem(font-size, 10px);
+            font-weight: 600;
+            @include rem(height, 25px);
+            @include rem(line-height, 25px);
+            @include rem(margin-left, -64px);
+            @include rem( margin-right, 6px);
+            @include rem(padding-left, 20px);
+            padding-right: 0;
+            text-align: center;
+            @include transition(0.2s background-color ease-out);
+            @include rem(width, 58px);
+        }
+        &:after {
+            background: #fff;
+            @include rem(border-radius, 19px);
+            content: "";
+            cursor: pointer;
+            display: block;
+            @include rem( margin, 1px);
+            @include rem(height, 19px);
+            @include rem(left, -62px);
+            position: absolute;
+            @include rem(top, 2px);
+            @include transition(0.2s left ease-out);
+            @include rem(width, 19px);
+            z-index: 2;
+        }
+    }
+}

@@ -21,7 +21,7 @@
 	vertical-align:bottom;
 	transform: scale(1.0);
 	height:20px;
-	width:20px;	
+	width:20px;
 }
 
 .ico-r-flair {
@@ -36,77 +36,84 @@
 	background-size: 20px auto;
 }
 
-
-// Flair
+//flair
 .flair {
-	
-	margin-left: -20px;
-	
-	//Flair styled checkboxes
-	input[type="checkbox"] {
-		
-		display:none;
-		
-		& + label { 
-			padding-bottom:5px;
-		}
-		
-		&:not(:checked) + label:before{ 
-			.flair-common;
-			.ico-c-flair;
-			background-position: 0px -20px;
-			opacity: .5;
-			}
-			
-		&:checked + label:before{
-			.flair-common;
-			.ico-c-flair;
-			.flair-animation;
-			background-position: 0px 0px;
-			}
-		
-		&:disabled + label:before{ 
-			.flair-common;
-			.ico-c-flair;
-			background-position: 0px -20px;
-			opacity: .2;
-			}
-	}
-	
-	
-	//Flair styled radio buttons
-    input[type="radio"] {
-		
-		display:none;
-		
-		&:not(:checked) + label:before{ 
-			.flair-common;
-			.ico-r-flair;
-			background-position: 0px -20px;
-			opacity: .6;
-			}
-			
-		&:checked + label:before{
-			.flair-common;
-			.ico-r-flair;
-			.flair-animation;
-			background-position: 0px 0px;
-			}
-		
-		&:disabled + label:before{ 
-			.flair-common;
-			.ico-r-flair;
-			background-position: 0px -20px;
-			opacity: .2;
-			cursor: not-allowed;
-			}
-	}
+    margin-left: -20px;
 
+    //Flair styled checkboxes
+    input {
+        &[type="checkbox"] {
+            width: 0;
+            + label {
+                padding-bottom: 5px;
+                &:before {
+                    .flair-common;
+                    .ico-c-flair;
+                    .flair-animation;
+                    background-position: 0 -20px;
+                }
+            }
 
+            &:not(:checked) + label:before {
+                .opacity(.5);
+            }
 
+            &:checked + label:before {
+                background-position-y: 0;
+            }
 
-// Future enhancements
+            &:disabled + label:before {
+                .opacity(.2);
+                cursor: not-allowed;
+            }
+            &:focus {
+                + label {
+                    &:before {
+                        outline: 2px solid;
+                        outline: 5px auto inherit;
+                        outline: 5px auto -webkit-focus-ring-color;
+                        outline-offset: 1px;
+                    }
+                }
+            }
+        }
 
+        //Flair styled radio buttons
+        &[type="radio"] {
+            width: 0;
+            + label {
+                &:before {
+                    .flair-common;
+                    .ico-r-flair;
+                    .flair-animation;
+                    background-position: 0 -19px;
+                }
+            }
+
+            &:not(:checked) + label:before {
+                .opacity(.6);
+            }
+
+            &:checked + label:before {
+                background-position-y: 0;
+            }
+
+            &:disabled + label:before {
+                .opacity(.2);
+                cursor: not-allowed;
+            }
+            &:focus {
+                + label {
+                    &:before {
+                        outline: 2px solid;
+                        outline: 5px auto inherit;
+                        outline: 5px auto -webkit-focus-ring-color;
+                        outline-offset: 1px;
+                    }
+                }
+            }
+        }
+    }
+    // Future enhancements
 
 }
-
