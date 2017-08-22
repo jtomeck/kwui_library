@@ -36,9 +36,8 @@
     background-size: 20px auto;
 }
 
-// Flair
+// Flair - 508
 .flair {
-
     @include rem(margin-left, -20px);
 
     //Flair styled checkboxes
