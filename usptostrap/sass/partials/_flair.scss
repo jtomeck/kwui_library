@@ -3,7 +3,6 @@
 // For radio and check boxes
 // Beta v0.2
 
-
 // Options
 .flair-animation {
     -webkit-transition: opacity .25s ease-in-out;
@@ -14,11 +13,12 @@
 
 // Common
 .flair-common {
-    content: ''; font-family: Arial;
+    content: '';
+    font-family: Arial;
     display: inline-block;
     position: relative;
     @include rem(margin-right, 10px);
-    vertical-align:bottom;
+    vertical-align: bottom;
     transform: scale(1.0);
     @include rem(height, 20px);
     @include rem(width, 20px);
@@ -36,78 +36,75 @@
     background-size: 20px auto;
 }
 
-
-// Flair
+// Flair - 508
 .flair {
-
     @include rem(margin-left, -20px);
 
     //Flair styled checkboxes
-    input[type="checkbox"] {
+    input {
+        &[type="checkbox"] {
+            width: 0;
+            + label {
+                @include rem(padding-bottom, 5px);
+                &:before {
+                    @extend .flair-common;
+                    @extend .ico-c-flair;
+                    @extend .flair-animation;
+                    background-position: 0 -20px;
+                }
+            }
 
-        display:none;
+            &:not(:checked) + label:before {
+                @include opacity(.5);
+            }
 
-        & + label {
-            @include rem(padding-bottom, 5px);
-        }
+            &:checked + label:before {
+                background-position-y: 0;
+            }
 
-        &:not(:checked) + label:before{
-            @extend .flair-common;
-            @extend .ico-c-flair;
-            background-position: 0px -20px;
-            opacity: .5;
-        }
-
-        &:checked + label:before{
-            @extend .flair-common;
-            @extend .ico-c-flair;
-            @extend .flair-animation;
-            background-position: 0px 0px;
-        }
-
-        &:disabled + label:before{
-            @extend .flair-common;
-            @extend .ico-c-flair;
-            background-position: 0px -20px;
-            opacity: .2;
-        }
-    }
-
-
-    //Flair styled radio buttons
-    input[type="radio"] {
-
-        display:none;
-
-        &:not(:checked) {
-            + label:before {
-                @extend .flair-common;
-                @extend .ico-r-flair;
-                background-position: 0px -20px;
-                opacity: .6;
+            &:disabled + label:before {
+                @include opacity(.2);
+                cursor: not-allowed;
             }
         }
-        &:checked + label:before{
-            @extend .flair-common;
-            @extend .ico-r-flair;
-            @extend .flair-animation;
-            background-position: 0px 0px;
-        }
 
-        &:disabled + label:before{
-            @extend .flair-common;
-            @extend .ico-r-flair;
-            background-position: 0px -20px;
-            opacity: .2;
-            cursor: not-allowed;
+        //Flair styled radio buttons
+        &[type="radio"] {
+            width: 0;
+            + label {
+                &:before {
+                    @extend .flair-common;
+                    @extend .ico-r-flair;
+                    @extend .flair-animation;
+                    background-position: 0 -19px;
+                }
+            }
+            &:not(:checked) {
+                + label:before {
+                    @include opacity(.6);
+                }
+            }
+            &:checked + label:before {
+                background-position-y: 0;
+            }
+
+            &:disabled + label:before {
+                @include opacity(.2);
+                cursor: not-allowed;
+            }
+        }
+        &:focus {
+            + label {
+                &:before {
+                    outline: 2px solid;
+                    outline: 5px auto inherit;
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-offset: 1px;
+                }
+            }
         }
     }
-
-
-
-
     // Future enhancements
-
 
 }
 
