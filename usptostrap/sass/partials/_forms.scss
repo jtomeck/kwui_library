@@ -217,7 +217,7 @@ output {
     position: relative;
 
     > input {
-        width: 0;
+        @extend .sr-only;
         &:checked {
             + label {
                 &:before {
