@@ -1,119 +1,81 @@
 // Styling to add a little flair
 // Contains optional styling to elements that may be added with .flair
 // For radio and check boxes
-// Beta v0.2
-
+// Beta v0.3
 
 // Options
 .flair-animation {
-	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-o-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+    .transition(opacity .25s ease-in-out);
 }
 
 // Common
-.flair-common {
-	content: ''; font-family: Arial;
+.ico-flair {
+    background-image: url("@{images-path}/icons/ico-flair.png") 0 0 no-repeat transparent;
+    background-size: 20px auto;
+    content: '';
     display: inline-block;
-	position: relative;
-	margin-right:10px;
-	vertical-align:bottom;
-	transform: scale(1.0);
-	height:20px;
-	width:20px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: bottom;
+    height: 20px;
+    width: 20px;
 }
 
-.ico-r-flair {
-	background-image: url("@{images-path}/icons/radio-flair.png");
-	background-repeat: no-repeat;
-	background-size: 20px auto;
-}
-
-.ico-c-flair {
-	background-image: url("@{images-path}/icons/checkbox-flair.png");
-	background-repeat: no-repeat;
-	background-size: 20px auto;
-}
-
-//flair
+// flair - 508
 .flair {
     margin-left: -20px;
-
-    //Flair styled checkboxes
     input {
+        //accessibly hide input element
+        .sr-only;
+        + label {
+            &:before {
+                .ico-flair;
+                .flair-animation;
+                .opacity(.7);
+            }
+        }
+        //disabled state
+        &:disabled + label:before {
+            .opacity(.2);
+            cursor: not-allowed;
+        }
+        //checked state
+        &:checked + label:before {
+            .opacity(1);
+        }
+        // add focus outline to background image when input is focused
+        &:focus {
+            + label {
+                &:before {
+                    outline: 2px solid;
+                    outline: 5px auto inherit;
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-offset: 1px;
+                }
+            }
+        }
+        //Flair styled checkboxes
         &[type="checkbox"] {
-            width: 0;
             + label {
                 padding-bottom: 5px;
                 &:before {
-                    .flair-common;
-                    .ico-c-flair;
-                    .flair-animation;
-                    background-position: 0 -20px;
+                    background-position-y: -71px;
                 }
             }
-
-            &:not(:checked) + label:before {
-                .opacity(.5);
-            }
-
             &:checked + label:before {
-                background-position-y: 0;
-            }
-
-            &:disabled + label:before {
-                .opacity(.2);
-                cursor: not-allowed;
-            }
-            &:focus {
-                + label {
-                    &:before {
-                        outline: 2px solid;
-                        outline: 5px auto inherit;
-                        outline: 5px auto -webkit-focus-ring-color;
-                        outline-offset: 1px;
-                    }
-                }
+                background-position-y: -46px;
             }
         }
-
         //Flair styled radio buttons
         &[type="radio"] {
-            width: 0;
             + label {
                 &:before {
-                    .flair-common;
-                    .ico-r-flair;
-                    .flair-animation;
-                    background-position: 0 -19px;
+                    background-position-y: -23px;
                 }
             }
-
-            &:not(:checked) + label:before {
-                .opacity(.6);
-            }
-
             &:checked + label:before {
                 background-position-y: 0;
-            }
-
-            &:disabled + label:before {
-                .opacity(.2);
-                cursor: not-allowed;
-            }
-            &:focus {
-                + label {
-                    &:before {
-                        outline: 2px solid;
-                        outline: 5px auto inherit;
-                        outline: 5px auto -webkit-focus-ring-color;
-                        outline-offset: 1px;
-                    }
-                }
             }
         }
     }
-    // Future enhancements
-
 }
