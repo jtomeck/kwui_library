@@ -38,12 +38,13 @@ __Footer__
 
 {::nomarkdown}
 <div class="pl-preview">
-<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
-  <div class="modal-dialog" style="width: 400px; max-width: 100%; padding: 20px;">
+<div class="modal fade in" role="dialog" style="display: block; position: relative; z-index: inherit;">
+  <div class="modal-dialog" role="document" style="width: 400px; max-width: 100%; padding: 20px;">
+    <p class="sr-only">Start of Dialog</p>
     <div class="modal-content">
       <div class="modal-header">
+        <h1 class="modal-title h4">Rename file</h1>
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Rename file</h4>
       </div>
       <div class="modal-body">
           <form role="form" class="">
@@ -58,6 +59,7 @@ __Footer__
         <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div>
+    <p class="sr-only">End of Dialog</p>
   </div>
 </div>
 </div>
