@@ -72,14 +72,6 @@ title: "Icons"
 
 </div>
 
-
-<div class="pl-pattern">
-### Icon scaling (experimental)
-
-
-
-</div>
-
 <div class="pl-pattern">
 ### Web application icons
 
