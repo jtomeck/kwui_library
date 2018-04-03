@@ -7,6 +7,27 @@ layout: pattern
 
 
 <div class="pl-versions">
+
+<div class="pl-panel">
+        <h4>1.6.2 - April 3, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.2">(Download)</a></h4>
+        <span class="label subtle label-success">NEW</span>
+        <ul>
+            <li>Added Font Awesome 5 SVG with JS; included in vendor.js</li>        
+            <li>Moved USPTO proprietary SVG icons to legacy, pre-deprecation page</li>
+        </ul>
+        
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated warning icon colors for improved color contrast</li>
+            <li>Updated close icon colors for improved color contrast</li>
+            <li>Updated language on the components/alerts page with new WCAG 2.0 guidance (20 second timeout)</li>
+            <li>Repaired issue with Select2 examples in components/controls</li>
+        </ul>
+
+
+        
+</div>
+
 <div class="pl-panel">
         <h4>1.6.1 - August 28, 2017 <a href="{{site.repository.url}}/releases/tag/v1.6.1">(Download)</a></h4>
         <span class="label subtle label-success">IMPROVED</span>
