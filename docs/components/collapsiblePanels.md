@@ -27,7 +27,7 @@ Collapsible panels can operate as either single-select (accordion) or multi-sele
 {::nomarkdown}
 <div class="pl-preview">
     <div class="panel-toggler">
-      <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
+      <a id="expand-all">Expand all</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse all</a>
     </div>
     <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
@@ -100,7 +100,7 @@ Collapsible panels can operate as either single-select (accordion) or multi-sele
 
 {% highlight html %}
 <div class="panel-toggler">
-  <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
+  <a id="expand-all">Expand all</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse all</a>
 </div>
   <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
