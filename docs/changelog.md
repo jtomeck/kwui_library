@@ -9,13 +9,21 @@ layout: pattern
 <div class="pl-versions">
 
 <div class="pl-panel">
+        <h4>1.6.3- July 6, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.3">(Download)</a></h4>        
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated Segoe UI font to use alternate styling</li>
+        </ul>
+</div>
+
+<div class="pl-panel">
         <h4>1.6.2 - April 3, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.2">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
             <li>Added Font Awesome 5 SVG with JS; included in vendor.js</li>        
             <li>Moved USPTO proprietary SVG icons to legacy, pre-deprecation page</li>
         </ul>
-        
+
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
             <li>Updated warning icon colors for improved color contrast</li>
@@ -25,7 +33,7 @@ layout: pattern
         </ul>
 
 
-        
+
 </div>
 
 <div class="pl-panel">
@@ -35,7 +43,7 @@ layout: pattern
             <li>Updated flair checkboxes, radio buttons, and toggles with 508 compliance updates</li>
 			<li>Bug fixes</li>
         </ul>
-        
+
 </div>
 
 
@@ -54,7 +62,7 @@ layout: pattern
 			<li>Build automation updated</li>
 			<li>Project structure updated</li>
         </ul>
-        
+
 </div>
 
 <div class="pl-panel">
@@ -73,7 +81,7 @@ layout: pattern
 			<li>Updated dependencies to latest stable</li>
 			<li>Retired outdated inspirations</li>
         </ul>
-        
+
 </div>
 
 <div class="pl-panel">
@@ -114,7 +122,7 @@ layout: pattern
             <li>Addition of optional inverse label pairs</li>
             <li>New time picker component</li>
 
-            
+
         </ul>
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
@@ -210,7 +218,7 @@ layout: pattern
         <h4>1.1.0 - Apr 14, 2015 <a href="{{site.repository.url}}/releases/tag/v1.1.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
-            <li>Added Inspiration section with examples of design pattern usage</li> 
+            <li>Added Inspiration section with examples of design pattern usage</li>
             <li>Added Accordion component</li>
             <li>Added Layout guides</li>
             <li>Added Filters pattern</li>
