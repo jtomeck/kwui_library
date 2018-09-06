@@ -1003,7 +1003,7 @@
   <p>All buttons are prefixed with the <code class="highlighter-rouge">btn</code> class. The <code class="highlighter-rouge">btn</code> class can be applied to any element. Try to use <code class="highlighter-rouge">&lt;button&gt;</code> elements when an action won’t change the URL/route, and <code class="highlighter-rouge">&lt;a&gt;</code> elements when the action will change the URL/route.</p>
 
 <div class="pl-preview">
-    <button type="button" class="btn btn-default">Default</button> 
+    <button type="button" class="btn btn-default">Default</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-success">Success</button>
@@ -1023,8 +1023,10 @@
 
   <h5 id="disabled-state">Disabled state</h5>
 
+  <p>Inactive states of UI elements, including buttons, are not required to meet accessible contrast requirements. <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">See WCAG 2.1 Section 1.4.11</a></p>
+
 <div class="pl-preview">
-    <button disabled type="button" class="btn btn-default">Default</button> 
+    <button disabled type="button" class="btn btn-default">Default</button>
     <button disabled type="button" class="btn btn-primary">Primary</button>
     <button disabled type="button" class="btn btn-danger">Danger</button>
     <button disabled type="button" class="btn btn-success">Success</button>
@@ -1118,7 +1120,7 @@
   <p>Add the <code class="highlighter-rouge">active</code> class and the <code class="highlighter-rouge">aria-pressed="true"</code> attribute to a button.</p>
 
 <div class="pl-preview">
-    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button> 
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Normal</button>
     <div class="btn-group">
         <button type="button" class="btn btn-default">Left</button>
@@ -1129,7 +1131,7 @@
 
   <figure class="highlight">
     <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default active"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default active"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Active<span class="nt">&lt;/button&gt;</span>
@@ -1244,24 +1246,20 @@
 </div>
 
   <figure class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-comment"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span>Comment<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-default"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-print"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Print<span class="nt">&lt;/span&gt;&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-inverse icon-floppy-o"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/span&gt;&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-hover"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-calendar-o"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Calendar<span class="nt">&lt;/span&gt;&lt;/button&gt;</span> 
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-comment"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span>Comment<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-default"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-print"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Print<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-inverse icon-floppy-o"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-icon-only btn-hover"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-calendar-o"</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Calendar<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Lock<span class="ni">&amp;nbsp;</span> <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-arrow-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span></code></pre>
   </figure>
 
 </div>
-
 
         </section>
     </div>
 
         <script src="/designpatterns/1.x/generated/scripts/vendor.js"></script>
         <script src="/designpatterns/1.x/generated/scripts/plugins.js"></script>
-
-        <script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
-
         <script src="/designpatterns/1.x/generated/scripts/main.js"></script>
 
     </body>

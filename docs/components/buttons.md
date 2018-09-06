@@ -27,11 +27,11 @@ There are 6 button styles:
 - __Warning__, indicates an action that may have some side effects, such as giving a user admin access.
 - __Link__, used for non-critical actions. Useful for keeping the interface simple.
 
-All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route. 
+All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route.
 
 {::nomarkdown}
 <div class="pl-preview">
-    <button type="button" class="btn btn-default">Default</button> 
+    <button type="button" class="btn btn-default">Default</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-success">Success</button>
@@ -52,9 +52,11 @@ All buttons are prefixed with the `btn` class. The `btn` class can be applied to
 
 ##### Disabled state
 
+Inactive states of UI elements, including buttons, are not required to meet accessible contrast requirements. [See WCAG 2.1 Section 1.4.11](https://www.w3.org/TR/WCAG21/#non-text-contrast)
+
 {::nomarkdown}
 <div class="pl-preview">
-    <button disabled type="button" class="btn btn-default">Default</button> 
+    <button disabled type="button" class="btn btn-default">Default</button>
     <button disabled type="button" class="btn btn-primary">Primary</button>
     <button disabled type="button" class="btn btn-danger">Danger</button>
     <button disabled type="button" class="btn btn-success">Success</button>
@@ -82,7 +84,7 @@ There are 4 different button sizes:
 - __Large__, use the `btn-lg` class.
 - __Normal__, no extra classes necessary.
 - __Small__, use the `btn-sm` class.
-- __Extra small__, use the `btn-xs` class. 
+- __Extra small__, use the `btn-xs` class.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -154,7 +156,7 @@ Add the `active` class and the `aria-pressed="true"` attribute to a button.
 
 {::nomarkdown}
 <div class="pl-preview">
-    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button> 
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Normal</button>
     <div class="btn-group">
         <button type="button" class="btn btn-default">Left</button>
@@ -166,7 +168,7 @@ Add the `active` class and the `aria-pressed="true"` attribute to a button.
 
 {% highlight html %}
 <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
-<button type="button" class="btn btn-default">Normal</button> 
+<button type="button" class="btn btn-default">Normal</button>
 <div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
     <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
@@ -276,7 +278,7 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
 
 Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.
 
-Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padding. 
+Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padding.
 
 For an icon without chrome, use a `btn-hover`.
 
@@ -287,13 +289,11 @@ For an icon without chrome, use a `btn-hover`.
 {:/nomarkdown}
 
 {% highlight html %}
-<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> 
-<button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i><span class="sr-only">Print</span></button> 
-<button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i><span class="sr-only">Save</span></button> 
-<button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i><span class="sr-only">Calendar</span></button> 
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button>
+<button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i><span class="sr-only">Print</span></button>
+<button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i><span class="sr-only">Save</span></button>
+<button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i><span class="sr-only">Calendar</span></button>
 <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 {% endhighlight %}
 
 </div>
-
-

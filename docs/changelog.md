@@ -9,6 +9,22 @@ layout: pattern
 <div class="pl-versions">
 
 <div class="pl-panel">
+        <h4>1.6.4- September 6, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.4">(Download)</a></h4>        
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated disabled button contrast and pointer indicator</li>
+            <li>Disabled state WCAG guidance language added</li>
+            <li>Reduced horizontal metadata spacing (#206)</li>
+        </ul>
+
+        <span class="label subtle label-success">PATCHED</span>
+        <ul>
+            <li>Updated icons.less file to resolve compile issues (#212)</li>
+        </ul>
+</div>
+
+
+<div class="pl-panel">
         <h4>1.6.3- July 6, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.3">(Download)</a></h4>        
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
