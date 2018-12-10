@@ -4,30 +4,55 @@
     font-family: $font-family-segoe;
     font-weight: $font-weight-lighter;
     src: local("Segoe UI Light");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
     font-family: $font-family-segoe;
     font-weight: $font-weight-light;
     src: local("Segoe UI Semilight");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
     font-family: $font-family-segoe;
     font-weight: $font-weight-normal;
     src: local($font-family-segoe);
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
     font-family: $font-family-segoe;
     font-weight: $font-weight-semi-bold;
     src: local("Segoe UI Semibold");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
     font-family: $font-family-segoe;
     font-weight: $font-weight-bold;
     src: local("Segoe UI Bold");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
@@ -35,6 +60,11 @@
     font-style: italic;
     font-weight: $font-weight-normal;
     src: local("Segoe UI Italic");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 @font-face {
@@ -42,6 +72,11 @@
     font-style: italic;
     font-weight: $font-weight-bold;
     src: local("Segoe UI Bold Italic");
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 /* Allow REM values to percentage equal to 10px in modern browsers
    Makes REM values divisible by 10.
@@ -52,6 +87,11 @@ body {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     font-family: $font-family-sans-serif;
+    -moz-font-feature-settings: "ss01" 1;
+    -ms-font-feature-settings: "ss01" 1;
+    -o-font-feature-settings: "ss01" 1;
+    -webkit-font-feature-settings: "ss01" 1;
+    font-feature-settings: "ss01" 1;
 }
 
 .black {

@@ -7,6 +7,63 @@ layout: pattern
 
 
 <div class="pl-versions">
+
+<div class="pl-panel">
+        <h4>1.6.4- September 6, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.4">(Download)</a></h4>        
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated disabled button contrast and pointer indicator</li>
+            <li>Disabled state WCAG guidance language added</li>
+            <li>Reduced horizontal metadata spacing (#206)</li>
+        </ul>
+
+        <span class="label subtle label-success">PATCHED</span>
+        <ul>
+            <li>Updated icons.less file to resolve compile issues (#212)</li>
+        </ul>
+</div>
+
+
+<div class="pl-panel">
+        <h4>1.6.3- July 6, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.3">(Download)</a></h4>        
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated Segoe UI font to use alternate styling</li>
+        </ul>
+</div>
+
+<div class="pl-panel">
+        <h4>1.6.2 - April 3, 2018 <a href="{{site.repository.url}}/releases/tag/v1.6.2">(Download)</a></h4>
+        <span class="label subtle label-success">NEW</span>
+        <ul>
+            <li>Added Font Awesome 5 SVG with JS; included in vendor.js</li>        
+            <li>Moved USPTO proprietary SVG icons to legacy, pre-deprecation page</li>
+        </ul>
+
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated warning icon colors for improved color contrast</li>
+            <li>Updated close icon colors for improved color contrast</li>
+            <li>Updated language on the components/alerts page with new WCAG 2.0 guidance (20 second timeout)</li>
+            <li>Repaired issue with Select2 examples in components/controls</li>
+        </ul>
+
+
+
+</div>
+
+<div class="pl-panel">
+        <h4>1.6.1 - August 28, 2017 <a href="{{site.repository.url}}/releases/tag/v1.6.1">(Download)</a></h4>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated flair checkboxes, radio buttons, and toggles with 508 compliance updates</li>
+			<li>Bug fixes</li>
+        </ul>
+
+</div>
+
+
+
 <div class="pl-panel">
         <h4>1.6.0 - August 21, 2017 <a href="{{site.repository.url}}/releases/tag/v1.6.0">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
@@ -21,7 +78,7 @@ layout: pattern
 			<li>Build automation updated</li>
 			<li>Project structure updated</li>
         </ul>
-        
+
 </div>
 
 <div class="pl-panel">
@@ -40,7 +97,7 @@ layout: pattern
 			<li>Updated dependencies to latest stable</li>
 			<li>Retired outdated inspirations</li>
         </ul>
-        
+
 </div>
 
 <div class="pl-panel">
@@ -81,7 +138,7 @@ layout: pattern
             <li>Addition of optional inverse label pairs</li>
             <li>New time picker component</li>
 
-            
+
         </ul>
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
@@ -177,7 +234,7 @@ layout: pattern
         <h4>1.1.0 - Apr 14, 2015 <a href="{{site.repository.url}}/releases/tag/v1.1.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
-            <li>Added Inspiration section with examples of design pattern usage</li> 
+            <li>Added Inspiration section with examples of design pattern usage</li>
             <li>Added Accordion component</li>
             <li>Added Layout guides</li>
             <li>Added Filters pattern</li>

@@ -88,6 +88,7 @@ module.exports = function (grunt) {
                     'empty-rules': false,
                     'outline-none': false,
                     'unique-headings': false
+
                 }
             }
         },
@@ -215,7 +216,8 @@ module.exports = function (grunt) {
                     'bower_components/select2/dist/js/select2.js',
                     'bower_components/nouislider/distribute/jquery.nouislider.all.min.js',
                     'bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js',
-                    'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js'],
+                    'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js',
+                    'bower_components/fontawesome/svg-with-js/js/fontawesome-all.js'],
                 dest: '<%= paths.assets %>/scripts/vendor.js'
             },
             // main js
@@ -232,7 +234,7 @@ module.exports = function (grunt) {
             vendorcss: {
                 src: [
                     'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css',
-                    'bower_components/font-awesome/css/font-awesome.css',
+                    //'bower_components/fontawesome/web-fonts-with-css/css/fontawesome-all.css',
                     'bower_components/select2/dist/css/select2.css',
                     'bower_components/nouislider/distribute/jquery.nouislider.min.css',
                     'bower_components/nouislider/distribute/jquery.nouislider.pips.min.css'

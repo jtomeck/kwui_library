@@ -27,7 +27,8 @@
 .btn[disabled],
 .btn.disabled,
 fieldset[disabled] .btn {
-    cursor: default;
+    cursor: not-allowed;
+    opacity: .5;
 }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "usptopatternlibrary",
-  "version": "1.5.4",
+  "version": "1.6.4",
   "private": true,
   "repository": {
     "type": "git",
@@ -9,11 +9,11 @@
   "dependencies": {
     "jquery": "~1.11.0",
     "jquery.inputmask": "~3.1.26",
-    "font-awesome": "~4.7.0",
     "bootstrap": "~3.3.7",
     "select2": "~4.0.3",
     "nouislider": "~7.0.10",
-    "bootstrap-timepicker": "^0.5.2"
+    "bootstrap-timepicker": "^0.5.2",
+    "fontawesome": "^5.0.9"
   },
   "main": [
     "usptostrap/less/usptostrap.less"
