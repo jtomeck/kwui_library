@@ -1,5 +1,5 @@
 //$bootstrap-path: "./node_modules/bootstrap-sass/assets/stylesheets";
-$images-path : "../images/";
+$images-path : "../images/" !default;
 // Core variables and mixins
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
 @import "partials/mixins/_dpl-mixins";

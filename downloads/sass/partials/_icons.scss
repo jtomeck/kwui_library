@@ -11,44 +11,44 @@
         display: inline-block;
         position: relative;
         @include rem(top, 2px);
-        background: url("../images/icons/black.svg") no-repeat scroll;
+        background: url("#{$images-path}icons/black.svg") no-repeat scroll;
     }
 
     &.icon-inverse {
         &:after {
-            background-image: url("../images/icons/white.svg");
+            background-image: url("#{$images-path}icons/white.svg");
         }
     }
     /* Additional SVG Icon States */
     &.icon-color-success {
         &:after {
-            background-image: url("../images/icons/success.svg");
+            background-image: url("#{$images-path}icons/success.svg");
         }
     }
     &.icon-color-danger {
         &:after {
-            background-image: url("../images/icons/danger.svg");
+            background-image: url("#{$images-path}icons/danger.svg");
         }
     }
     &.icon-color-warning {
         &:after {
-            background-image: url("../images/icons/warning.svg");
+            background-image: url("#{$images-path}icons/warning.svg");
         }
     }
     &.icon-color-primary {
         &:after {
-            background-image: url("../images/icons/primary.svg");
+            background-image: url("#{$images-path}icons/primary.svg");
         }
     }
     &.icon-color-info {
         &:after {
-            background-image: url("../images/icons/info.svg");
+            background-image: url("#{$images-path}icons/info.svg");
         }
     }
     /* Masked icons added for future use */
     &.icon-masked {
         &:after {
-            background-image: url("../images/icons/mask.svg");
+            background-image: url("#{$images-path}icons/mask.svg");
         }
     }
 
@@ -5419,7 +5419,7 @@
             position: relative;
             @include rem(top, 2px);
             vertical-align: middle;
-            background: url("../images/icons/IPicons-large.svg") no-repeat scroll;
+            background: url("#{$images-path}icons/IPicons-large.svg") no-repeat scroll;
         }
         &.icon {
             /* Large IP Icons (Noun Project) */
@@ -5586,7 +5586,7 @@ OC Icons @ 16px
             position: relative;
             @include rem(top, 2px);
             vertical-align: middle;
-            background: url("../images/icons/OCicons.svg") no-repeat scroll;
+            background: url("#{$images-path}icons/OCicons.svg") no-repeat scroll;
             width: 16px;
             height: 16px;
         }
