@@ -44,20 +44,20 @@
         }
     }
 
-    &-icon-info:after {
+    &-icon-info {
         @extend .icon-info-circle;
     }
 
-    &-icon-success:after {
+    &-icon-success {
         @extend .icon-check;
     }
 
-    &-icon-danger:after {
-        @extend .icon-times-circle:after;
+    &-icon-danger {
+        @extend .icon-times-circle;
     }
 
-    &-icon-warning:after {
-        @extend .icon-warning:after;
+    &-icon-warning {
+        @extend .icon-warning;
     }
 }
 
@@ -68,7 +68,6 @@
         border-left-width: 4px;
         @include rem(border-radius, 2px);
         @include rem(margin-bottom, 9px);
-        position: relative;
         background: $white;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
         @include rem(padding, $alert-padding*2);
