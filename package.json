@@ -3,7 +3,7 @@
   "version": "1.6.5",
   "repository": {
     "type:": "git",
-    "url": "https://github.com/uspto/designpatterns.git"
+    "url": "https://github.com/uspto/kwui_library.git"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",

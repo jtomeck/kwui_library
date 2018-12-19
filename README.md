@@ -1,17 +1,17 @@
 USPTO UI Design Library
 ==============
 
-- [View the UI Design Library](https://uspto.github.io/designpatterns/)
+- [View the UI Design Library](https://uspto.github.io/kwui_library/)
 - [Contributing](CONTRIBUTING.md)
 - [How-to: Using the UI Design Library in your project](howto.md)
 - [Terms](TERMS.md)
 - [License](LICENSE)
 
-Have feedback or questions about the UI Design Library? [Create an issue!](https://github.com/USPTO/designpatterns/issues)
+Have feedback or questions about the UI Design Library? [Create an issue!](https://github.com/USPTO/kwui_library/issues)
 
 #### About this repository
 
-This is the source code repository for the [USPTO UI Design Library](https://uspto.github.io/designpatterns/). The site is powered by [Jekyll](http://jekyllrb.com/), a static site generator that plays well with [Github Pages](https://help.github.com/articles/using-jekyll-with-pages/). 
+This is the source code repository for the [USPTO UI Design Library](https://uspto.github.io/kwui_library/). The site is powered by [Jekyll](http://jekyllrb.com/), a static site generator that plays well with [Github Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 
 #### Want to contribute?
 See our [CONTRIBUTING.md](CONTRIBUTING.md) file for contribution guidelines.
@@ -69,11 +69,11 @@ Run the project with Jekyll:
 ```
 jekyll serve
 ```
-This starts Jekyll, which compiles the markdown files into static html files, starts a server for you to view the documentation at, as well as watches for changes and recompiles. 
+This starts Jekyll, which compiles the markdown files into static html files, starts a server for you to view the documentation at, as well as watches for changes and recompiles.
 
 
 ##### Distribution Builds
-After running `grunt build` and `jekyll build`, you will have a `_site` folder that contains the entire static site and resources. 
+After running `grunt build` and `jekyll build`, you will have a `_site` folder that contains the entire static site and resources.
 
 
 ## License

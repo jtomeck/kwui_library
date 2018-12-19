@@ -252,7 +252,7 @@ module.exports = function (grunt) {
             taskName: {
                 options: {
                     position: 'top',
-                    banner: '/* usptostrap v<%= config.version %> | <%= config.repository.url %> */\n\n',
+                    banner: '/* kwbootstrap v<%= config.version %> | <%= config.repository.url %> */\n\n',
                     linebreak: true
                 },
                 files: {
@@ -270,15 +270,10 @@ module.exports = function (grunt) {
                 files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
                 tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
             },
-            //sass: {
-               // files: ['usptostrap/sass/**/*.scss', 'front/styles/**/*.scss'],
-               // tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
-          //  }
-        },
-
-        // Zips up src less files, images, and minified css
-        zip: {
-            '<%= paths.downloads %>/usptostrap-<%= config.version %>.zip': ['<%= paths.downloads %>/**/*']
+            sass: {
+                files: ['kwbootstrap/sass/**/*.scss', 'front/styles/**/*.scss'],
+                tasks: ['sass', 'usebanner', 'concat:maincss', 'autoprefixer']
+            }
         },
         //Jekyll Tasks
         jekyll: {

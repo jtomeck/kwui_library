@@ -1,10 +1,10 @@
 # Guidance on how to contribute
 
-> By submitting a pull request, or filing a bug, issue, or 
+> By submitting a pull request, or filing a bug, issue, or
 > feature-request you are agreeing to comply with our [TERMS](TERMS.md) and [LICENCE](LICENSE).
 
-There are two primary ways to help: 
- - Using the issue tracker, and 
+There are two primary ways to help:
+ - Using the issue tracker, and
  - Changing the code-base.
 
 
@@ -35,7 +35,7 @@ There are two primary ways to help:
     - Add ‘browser’ labels for issues that are specific to a certain browser
     - Add ‘needs’ labels for issues that need detail, feedback, or work
     - Add ‘type’ labels to categorize issues by defects, improvements, or questions
-    - Add ‘state’ labels to indicate whether it is ready to be worked on or in progress. State labels are synced with [waffle.io](https://waffle.io/USPTO/designpatterns), which can _optionally_ be used to manage and view issues. 
+    - Add ‘state’ labels to indicate whether it is ready to be worked on or in progress. State labels are synced with [waffle.io](https://waffle.io/USPTO/kwui_library), which can _optionally_ be used to manage and view issues.
     - Update the 'needs' and 'state' labels for an issue as a state progresses through opened/in-progress/closed.
 - Assign an issue or pull request to a user if desired. [Learn how](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
@@ -50,8 +50,8 @@ There are two primary ways to help:
 ##### Releasing
 - A core repository owner is elected to handle releasing new versions
 - A github tag/release should be created for each version. [Learn how](https://help.github.com/articles/creating-releases/).
-- The changelog should be updated (`/docs/changelog.md`) with the changes included in the release. 
-- Follow [semver](http://semver.org/) (major-minor-patch) for versioning: 
+- The changelog should be updated (`/docs/changelog.md`) with the changes included in the release.
+- Follow [semver](http://semver.org/) (major-minor-patch) for versioning:
   - major: Major or 'breaking' changes (e.g., drastically changing one or more patterns, layouts, or design styles)
   - minor: Additions and minor improvements (new patterns or adding additional sections to existing patterns)
   - patch: Small tweaks/changes/fixes/typos/clarifications
@@ -120,7 +120,7 @@ There are two primary ways to help:
 ```
 - The markup necessary for creating a guide is:
   - The YAML metadata at the top
-  - `<div class="pl-pattern> ... </div>` 
+  - `<div class="pl-pattern> ... </div>`
     - indicates the start and end of a section within the guide. There can be multiple of these within a single guide.
   - `{::nomarkdown} <div class="pl-preview"> ... </div> {:/nomarkdown}`
     - indicates the start and end of a live example. These go _inside_ the `.pl-pattern` divs.
@@ -139,20 +139,20 @@ There are two primary ways to help:
 
 ## Adding and modifying the icons
 - Since the method for serving icons is often dependent on the target audience, the design library provides a set of individual `.svg` files in `/usptostrap/images/icons/` that users can consume and modify to meet their needs.
-- If an icon is added or modified, use [icomoon.io](https://icomoon.io/) to compile the individual icons into black and white sprite sheets. You will need to update `/usptostrap/less/_icons.less` with the generated css. 
+- If an icon is added or modified, use [icomoon.io](https://icomoon.io/) to compile the individual icons into black and white sprite sheets. You will need to update `/usptostrap/less/_icons.less` with the generated css.
 
 ## Performing a versioned release
 - Update changelog.md with your latest changes
 - Update the `version` property in `/package.json` to your new version
 - Update the `version` property in `/_config.yml` to your new version
-- Update the `baseurl` property in `/_config.yml` to `/designpatterns/1.x` (for a major bump, it would be `/designpatterns/2.x`)
+- Update the `baseurl` property in `/_config.yml` to `/kwui_library/1.x` (for a major bump, it would be `/kwui_library/2.x`)
 - Update the `versions` property in `/_config.yml` to include your new version
 - Update the `includePreviews` property in `/_config.yml` to be `false`
 - Run `grunt build` to build all the LESS/JS files
 - Run `jekyll build` from the cmd line to build the documentation
 - Delete the nested version folders under `/_site`
 - Rename the newly created `/_site` folder to your new version (e.g., `/1.x` or `/2.x`)
-- Revert the `baseurl` property in `/_config.yml` back to `/designpatterns`
+- Revert the `baseurl` property in `/_config.yml` back to `/kwui_library`
 - Revert the `includePreviews` property in `/_config.yml` back to `true`
 - Commit your changes.
-- Add the release to https://github.com/USPTO/designpatterns/releases
+- Add the release to https://github.com/USPTO/kwui_library/releases

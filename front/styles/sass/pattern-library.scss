@@ -1,4 +1,4 @@
-@import "../../../usptostrap/sass/usptostrap.scss";
+@import "../../../kwbootstrap/sass/kwbootstrap.scss";
 @import "pattern-library-hjs-github";
 
 $pl-background-color: #f6f6f6;
@@ -47,7 +47,7 @@ body {
     padding: 0;
 
     .navbar-brand {
-        @include rem(width, 158px);
+        @include rem(width, 167px);
         @include rem(padding-left, 16px);
         background: darken($pl-header-bg, 5%);
     }
@@ -62,6 +62,16 @@ body {
         border: none;
         float: left;
         height: $navbar-height;
+    }
+
+    &.navbar-inverse {
+        .navbar-brand {
+            color: $white;
+            height: 49px;
+        }
+        .nav-collapse {
+            height: 49px;
+        }
     }
 }
 
@@ -397,10 +407,15 @@ body {
 .pl-hero {
     background-color: $brand-primary;
     @include rem(padding-bottom, 75px);
+    @include rem(padding-top, 50px);
     background-image: url(../images/hero-mockup.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    height: 550px;
+    &.applications {
+        height: auto;
+    }
 
     .btn {
         @include rem(margin, 0 10px);
@@ -487,24 +502,30 @@ body {
             text-align: left;
         }
     }
-}
-
-.pl-uspto-logo {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTY5LjUgNTkuMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTY5LjUgNTkuMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE0Mi42LDE4LjdjLTEuOSwwLTMuNSwwLjYtNC43LDEuOWMtMiwyLTIuMiw1LjQtMi4yLDguOWMwLDMuNSwwLjMsNi45LDIuMiw4LjljMS4yLDEuMiwyLjgsMS45LDQuNywxLjkKCQljMS45LDAsMy42LTAuNyw0LjgtMS45YzItMiwyLjItNS40LDIuMi04LjljMC0zLjUtMC4zLTYuOS0yLjItOC45QzE0Ni4yLDE5LjMsMTQ0LjUsMTguNywxNDIuNiwxOC43eiIvPgoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTkxLjMsNDAuM2M1LjksMCw2LjctNS4xLDYuNy0xMC44YzAtNS44LTAuOC0xMC44LTYuNy0xMC44Yy02LDAtNi44LDUtNi44LDEwLjgKCQlDODQuNSwzNS4yLDg1LjMsNDAuMyw5MS4zLDQwLjN6Ii8+Cgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTYyLjksMGgtNDQuMnYxMy4yaDYuM3Y1aC02LjN2MTguMmMwLDIuNCwxLjIsMy44LDMuNiwzLjhoMi43djUuNmgtMy45Yy02LjEsMC04LjktNC40LTguOS05VjE4LjJoLTMuNwoJCXYtNWgzLjdWMEg2LjdDMywwLDAsMywwLDYuN3Y0NS44YzAsMy43LDMsNi43LDYuNyw2LjdINzhWMTMuMmg2LjR2My41YzIuNC0zLDUuMS0zLjksOC42LTMuOWMzLjMsMCw2LjIsMS4xLDgsMi45CgkJYzMuMSwzLjIsMy43LDguNCwzLjcsMTMuN2MwLDUuMy0wLjUsMTAuNi0zLjcsMTMuOGMtMS44LDEuOC00LjYsMi45LTcuOSwyLjljLTMuNSwwLTYuMi0wLjgtOC41LTMuN3YxNi43aDc4LjQKCQljMy43LDAsNi43LTMsNi43LTYuN1Y2LjdDMTY5LjUsMywxNjYuNSwwLDE2Mi45LDB6IE0zOS43LDQ1LjhoLTYuNHYtMy4zYy0yLjIsMi40LTUuNCwzLjctOC43LDMuN2MtMy4zLDAtNi4xLTEuMS04LTMKCQljLTIuNS0yLjQtMy4zLTUuNS0zLjMtOS4yVjEzLjJoNi41djE5LjhjMCw1LjEsMi45LDcuMyw2LjUsNy4zYzMuNywwLDYuNy0yLjIsNi43LTcuM1YxMy4yaDYuNVY0NS44eiBNNTguNyw0Ni4xCgkJYy01LjMsMC05LjgtMC45LTEzLjctNC43bDQuMy00LjNjMi42LDIuNyw2LjIsMy40LDkuNCwzLjRjNCwwLDcuMS0xLjQsNy4xLTQuNWMwLTIuMi0xLjItMy41LTQuNC0zLjlsLTUuMi0wLjQKCQljLTYuMi0wLjYtOS42LTMuMy05LjYtOWMwLTYuNCw1LjUtOS45LDEyLjMtOS45YzQuOSwwLDksMSwxMi4xLDMuN2wtNC4xLDQuMmMtMi4xLTEuNy00LjktMi40LTgtMi40Yy00LDAtNS45LDEuNy01LjksNC4yCgkJYzAsMi4yLDEuMywzLjQsNC41LDMuN2w0LjYsMC40YzYuNywwLjYsMTAuMywzLjUsMTAuMyw5LjJDNzIuMiw0Mi42LDY2LjUsNDYuMSw1OC43LDQ2LjF6IE0xNTIuMyw0Mi4zYy0yLjEsMi4yLTUuMywzLjktOS44LDMuOQoJCWMtNC40LDAtNy42LTEuNy05LjctMy45Yy0zLjEtMy4yLTMuOS03LjMtMy45LTEyLjhjMC01LjUsMC44LTkuNiwzLjktMTIuOGMyLjEtMi4yLDUuMy0zLjksOS43LTMuOWM0LjQsMCw3LjYsMS43LDkuOCwzLjkKCQljMy4xLDMuMiwzLjksNy4zLDMuOSwxMi44QzE1Ni4yLDM1LDE1NS40LDM5LjEsMTUyLjMsNDIuM3oiLz4KPC9nPgo8L3N2Zz4=);
-    background-size: fit;
-    width: 2.868020305em;
-    height: 1em;
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-.pl-pattern-layouts {
-    img {
-        float: left;
-        @include rem(padding, 4px);
-        border: 2px solid $gray-47;
-        @include rem(border-radius, 2px);
-        @include rem(margin, 0 18px 18px 0);
-        vertical-align: middle;
+    &.applications {
+        .app {
+            display:block;
+            padding:15px;
+            & > a {
+                border: 1px solid #ececec;
+                border-radius: 3px;
+                display: flex;
+                height: 150px;
+                padding: 25px;
+                transition: all .15s ease-in-out;
+                width: 100%;
+                img {
+                    align-items: center;
+                    width: 100%;
+                }
+                &:hover {
+                    border-bottom: 5px solid $brand-secondary;
+                }
+            }
+        }
     }
+}
+
+.app-guide-content {
+    @include rem(padding, 20px 40px);
 }
