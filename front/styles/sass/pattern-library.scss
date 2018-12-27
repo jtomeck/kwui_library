@@ -28,18 +28,28 @@ body {
     @include rem(padding, 4px);
     @include rem(margin-bottom, 8px);
     @include rem(margin-right, 8px);
+    @include rem(min-height, 165px);
+    @include rem(width, 215px);
     border: 1px solid $gray-46;
     text-align: center;
+    vertical-align: top;
 
     .pl-palette-preview {
         @include rem(border-radius, 2px);
-        @include rem(width, 125px);
-        @include rem(height, 50px);
+        @include rem(height, 75px);
+        @include rem(margin-bottom, 5px);
+    }
+
+    .pl-palette-description {
+        @include rem(font-size, 12px);
+        @include rem(padding, 10px);
+        line-height: 1.2em;
+
     }
 
     .pl-palette-variable {
         font-weight: $font-weight-semi-bold;
-        color: $gray-light;
+        color: darken($gray-light,20%);
     }
 }
 
@@ -71,6 +81,24 @@ body {
         }
         .nav-collapse {
             height: 49px;
+        }
+    }
+    .navbar-right,
+    .navbar-left {
+        margin: 0;
+        li {
+            a {
+                @include rem(padding, 14px 20px 16px)
+            }
+            &.active {
+                & > a {
+                    background: rgba(255,255,255,.1);
+                    &:hover {
+                        background: $white;
+                        color: $brand-primary;
+                    }
+                }
+            }
         }
     }
 }
@@ -176,7 +204,7 @@ body {
 
     .pl-pattern {
         @extend .pl-panel;
-        @include rem(padding, 40px 40px 0 40px);
+        @include rem(padding, 40px);
 
         @media(max-width: $screen-xs-max) {
             @include rem(margin, 6px);
@@ -202,6 +230,10 @@ body {
 
         > h4 {
             @include rem(margin-top, 40px);
+        }
+
+        img {
+            max-width: 100%;
         }
 
         .pl-toggle-code {
@@ -340,14 +372,13 @@ body {
     position: fixed;
     width: $pl-sidebar-width;
     z-index: $zindex-navbar-fixed - 1;
-    @include rem(padding, 0 0 6px 0);
+    @include rem(padding, 12px 0 6px 0);
 }
 
 .pl-sidebar .nav.nav-stacked {
-
+    @include rem(padding-top, 15px);
     list-style: none;
     font-weight: $font-weight-semi-bold;
-    line-height: 16px;
 
     > li > a {
         color: $pl-sidebar-link-fg;
@@ -413,9 +444,6 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     height: 550px;
-    &.applications {
-        height: auto;
-    }
 
     .btn {
         @include rem(margin, 0 10px);
@@ -502,6 +530,19 @@ body {
             text-align: left;
         }
     }
+}
+
+/* =======================================
+ * APPLICATION STYLES
+ * ======================================= */
+
+.pl-hero {
+    &.applications {
+        height: auto;
+    }
+}
+
+.pl-about {
     &.applications {
         .app {
             display:block;
@@ -526,6 +567,8 @@ body {
     }
 }
 
-.app-guide-content {
-    @include rem(padding, 20px 40px);
+.pl-pattern {
+    .applogo {
+        max-width:225px;
+    }
 }

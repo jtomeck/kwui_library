@@ -7,7 +7,6 @@ exclude:
   - front
   - node_modules
   - bower_components
-  - usptostrap
   - bower.json
   - package.json
   - LICENSE
@@ -23,15 +22,6 @@ kramdown:
   auto_ids: true
   parse_block_html: true
 
-# All links in the design library will start with this baseurl
-baseurl: "/kwui_library"
-
-# The url for the home page of the design library
-homeurl: "/kwui_library"
-
-# The url for the apps list page
-appsurl: "/kwui_library/apps"
-
 # All email links will use this variable
 email: jared.tomeck@kitware.com?subject=Kitware UI Library
 
@@ -40,12 +30,10 @@ repository:
   name: jtomeck/kwui_library
   url: https://github.com/jtomeck/kwui_library
 
-# The list of all applications
-appList:
-  - name: "Girder"
-    image: "/kwui_library/apps/generated/images/applogos/Girder_Logo.svg"
-    url: "/kwui_library/apps/girder"
-
+# List of collections
+collections:
+  apps:
+    output: true
 
 # The categories for the side navigation. These correspond to the folders under the /apps/appname folder
 doctypes:

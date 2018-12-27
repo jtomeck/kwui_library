@@ -1,0 +1,51 @@
+---
+title: Buttons
+
+appname: girder
+layout: application
+---
+
+
+<div class="pl-pattern">
+
+<h3>Buttons</h3>
+
+<p>Buttons are used as triggers for actions. There are different types of buttons depending on the situation. This page will cover the different button types and situations.</p>
+
+</div>
+
+<div class="pl-pattern">
+
+<h3 id="button-styles">Button Styles</h3>
+
+    {% capture imgurl %}{{site.url}}/generated/images/{{page.appname}}/{{page.title | downcase}}{% endcapture %}
+    <p style="margin-top: 25px;"><img src="{{ imgurl }}/button_types.jpg" alt="" width="950px"></p>
+
+    <h4>There are 3 main button styles:</h4>
+
+    <ul>
+        <li><strong>Depressed</strong>, the main button style. Used for actions that require emphasis, such as buttons used for confirmations and other top-level actions
+            <ul>
+                <li><strong>Icon buttons</strong> are used sparingly to avoid visual clutter. Use this when you need to call a bit more attention to the button. The icon color will always match that of the font. The icon will usually be positioned on the right of the button.</li>
+            </ul>
+        </li>
+        <li><strong>Outline</strong>, used for secondary actions that are needed within a larger workflow.</li>
+        <li><strong>Flat</strong>, used alongside "Depressed" buttons. Depending on the color used, these can be used for actions secondary to the main action, or opposite actions such as "cancel".</li>
+    </ul>
+    <hr>
+    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button Documentation</a> for more details.</strong></p>
+
+</div>
+
+<div class="pl-pattern">
+    <h3 id="button-sizes">Button sizes</h3>
+
+    <p>Lorem ipsum dolor:</p>
+
+    <ul>
+        <li><strong>Large</strong>, use the <code class="highlighter-rouge">btn-lg</code> class.</li>
+        <li><strong>Normal</strong>, no extra classes necessary.</li>
+        <li><strong>Small</strong>, use the <code class="highlighter-rouge">btn-sm</code> class.</li>
+        <li><strong>Extra small</strong>, use the <code class="highlighter-rouge">btn-xs</code> class.</li>
+    </ul>
+</div>

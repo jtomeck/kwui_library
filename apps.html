@@ -1,0 +1,23 @@
+---
+title: "Applications"
+layout: general
+---
+<div class="pl-hero applications">
+    <div class="container">
+        <h1 class="text-center">The Applications</h1>
+    </div>
+    <div class="pl-hero-background"></div>
+</div>
+<div class="pl-about applications">
+    <div class="container panel-body">
+        {% for app in site.apps %}
+            {% if app.toplevel %}
+                <div class="col-sm-3 app">
+                    <a href="{{ app.url }}">
+                        <img src="{{ app.logo }}" alt="{{ app.title }}">
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
