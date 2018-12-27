@@ -1,15 +1,13 @@
 {% include header.html %}
 <div class="pl-header navbar navbar-inverse pl-no-sidebar">
     <div class="container-fluid">
-        <ul class="nav navbar-nav nav-pills navbar-left">
-            <li>
-                <a href="{{site.baseurl}}" title="Home">Home</a>
-            </li>
-            <li>
-                <a href="{{site.appsurl}}" title="Applications">Applications</a>
-            </li>
-        </ul>
         <ul class="nav navbar-nav nav-pills navbar-right">
+            <li {% if page.title == 'Home' %} class="active" {% endif %} >
+                <a href="{{site.url}}/">Home</a>
+            </li>
+            <li {% if page.title == 'Applications' %} class="active" {% endif %}>
+                <a href="{{site.url}}/apps.html">Applications</a>
+            </li>
             <li>
                 <a href="{{site.repository.url}}" title="View on Github" ><i class="icon icon-inverse icon-github"></i> &nbsp; View on Github</a>
             </li>
