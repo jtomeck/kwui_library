@@ -571,4 +571,51 @@ body {
     .applogo {
         max-width:225px;
     }
+    .pl-padded-col {
+        @include rem(padding, 20px 40px);
+        p {
+            text-align: left;
+        }
+    }
+}
+
+.do-dont {
+    @include rem(padding, 15px 0);
+    max-width: 100%;
+    overflow: hidden;
+    .row {
+        @include rem(margin-left, -40px);
+        @include rem(margin-right, -40px);
+    }
+
+    $do: #4caf50;
+    $dont: #d32f2f;
+
+    .do, .dont {
+        > p {
+            border-top:4px solid;
+            @include rem(padding, 10px);
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .do {
+        > p {
+            border-color: $do;
+            span {
+                color: darken($do, 15%);
+            }
+        }
+    }
+
+    .dont {
+        > p {
+            border-color: $dont;
+            span {
+                color: darken($dont, 15%);
+            }
+        }
+    }
 }

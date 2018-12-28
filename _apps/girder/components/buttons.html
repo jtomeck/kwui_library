@@ -5,6 +5,7 @@ appname: girder
 layout: application
 ---
 
+{% capture imgurl %}{{site.url}}/generated/images/{{page.appname}}/{{page.title | downcase}}{% endcapture %}
 
 <div class="pl-pattern">
 
@@ -16,9 +17,8 @@ layout: application
 
 <div class="pl-pattern">
 
-<h3 id="button-styles">Button Styles</h3>
+    <h3 id="button-styles">Button Styles</h3>
 
-    {% capture imgurl %}{{site.url}}/generated/images/{{page.appname}}/{{page.title | downcase}}{% endcapture %}
     <p style="margin-top: 25px;"><img src="{{ imgurl }}/button_types.jpg" alt="" width="950px"></p>
 
     <h4>There are 3 main button styles:</h4>
@@ -29,23 +29,71 @@ layout: application
                 <li><strong>Icon buttons</strong> are used sparingly to avoid visual clutter. Use this when you need to call a bit more attention to the button. The icon color will always match that of the font. The icon will usually be positioned on the right of the button.</li>
             </ul>
         </li>
-        <li><strong>Outline</strong>, used for secondary actions that are needed within a larger workflow.</li>
+        <li><strong>Outline</strong>, used for secondary actions that are needed within a larger workflow, where emphasis is not important.</li>
         <li><strong>Flat</strong>, used alongside "Depressed" buttons. Depending on the color used, these can be used for actions secondary to the main action, or opposite actions such as "cancel".</li>
     </ul>
     <hr>
     <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button Documentation</a> for more details.</strong></p>
 
-</div>
+</div><!-- end button styles -->
 
 <div class="pl-pattern">
+
     <h3 id="button-sizes">Button sizes</h3>
 
-    <p>Lorem ipsum dolor:</p>
+    <p>Vuetify comes with large, medium and small sized buttons. Here is how they are used for Girder.</p>
 
     <ul>
-        <li><strong>Large</strong>, use the <code class="highlighter-rouge">btn-lg</code> class.</li>
-        <li><strong>Normal</strong>, no extra classes necessary.</li>
-        <li><strong>Small</strong>, use the <code class="highlighter-rouge">btn-sm</code> class.</li>
-        <li><strong>Extra small</strong>, use the <code class="highlighter-rouge">btn-xs</code> class.</li>
+        <li><strong>Large</strong>, used for the most important and top-level action buttons (e.g. the main upload button or any confirmative action buttons).</li>
+        <li><strong>Medium</strong> is not used at all.</li>
+        <li><strong>Small</strong>, used for secondary actions within a workflow.</li>
     </ul>
-</div>
+
+    <p><strong>Here is an example:</strong></p>
+
+    <p style="margin-top: 25px;"><img src="{{ imgurl }}/button_sizes.jpg" alt="" width="950px"></p>
+
+    <hr>
+    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button Documentation</a> for more details.</strong></p>
+</div><!-- end button sizes -->
+
+<div class="pl-pattern">
+
+    <h3 id="button-rules">General Button Rules</h3>
+
+    <h4>Confirmation Buttons</h4>
+    <p>Buttons that represent confirmative actions should be thought of as the conclusion of a workflow. Therefore they should be the last thing displayed and should always be on the right.</p>
+    <div class="do-dont">
+        <div class="row">
+            <div class="col-sm-6 pl-padded-col do">
+                <img src="{{ imgurl }}/confirmative_do.jpg" alt="">
+                <p><span>Do.</span> The confirmative action button is given the most emphasis by using the depressed button style (using <code>light-blue darken-1</code>). The cancel button is close by to avoid having to move the mouse too far and is de-emphasized by using the "flat" button style. The color <code>red accent-3</code> is used to signify the button is a negative action.</p>
+            </div>
+
+            <div class="col-sm-6 pl-padded-col dont">
+                <img src="{{ imgurl }}/confirmative_dont.jpg" alt="">
+                <p><span>Don't.</span> Even though the user would still understand the workflow displayed here, it is not best practice to display action buttons on the left side. Think of the action buttons as "next" buttons, since their job is to move you forward in the flow. Putting them on the right reinforces that forward movement.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 pl-padded-col dont">
+                <img src="{{ imgurl }}/confirmative_dont1.jpg" alt="">
+                <p><span>Don't.</span> Even though listing the main action button first supports the natural reading order, it is not best practice to display UI actions in this order. Placing the main action button last improves the flow because it assumes this button is the conclusion of said flow. The conclusion always comes last.</p>
+            </div>
+
+            <div class="col-sm-6 pl-padded-col dont">
+                <img src="{{ imgurl }}/confirmative_dont2.jpg" alt="">
+                <p><span>Don't.</span> This seems like a completely reasonable way to display action buttons, right? The answer is yes, <strong>BUT</strong> even though there would be no confusion on the user's end, best practice is to keep the action buttons close to minimize mouse travel for the user.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 pl-padded-col dont">
+                <img src="{{ imgurl }}/cancel_dont.jpg" alt="">
+                <p><span>Don't.</span> Negative action buttons should never have more or even similar emphasis to the confirmative action button.</p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end button sizes -->
