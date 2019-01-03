@@ -491,7 +491,7 @@ body {
     h4 {
         color: $white;
     }
-    @include rem(padding, 100px);
+    @include rem(padding, 30px);
     color: mix($pl-sidebar-bg, $white, 50%);
     a {
         color: mix($pl-sidebar-bg, $white, 50%);
