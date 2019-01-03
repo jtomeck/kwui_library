@@ -1,10 +1,10 @@
 {
-  "name": "usptopatternlibrary",
+  "name": "kwui_library",
   "version": "1.6.5",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/USPTO/kwui_library.git"
+    "url": "git://github.com/jtomeck/kwui_library.git"
   },
   "dependencies": {
     "jquery": "~1.11.0",
@@ -16,7 +16,7 @@
     "fontawesome": "^5.0.9"
   },
   "main": [
-    "usptostrap/less/usptostrap.less"
+    "kwbootstrap/less/kwbootstrap.less"
   ],
   "ignore": [
     "**/.*",
