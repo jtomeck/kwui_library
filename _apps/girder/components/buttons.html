@@ -5,7 +5,7 @@ appname: girder
 layout: application
 ---
 
-{% capture imgurl %}{{site.url}}/generated/images/{{page.appname}}/{{page.title | downcase}}{% endcapture %}
+{% capture imgurl %}{{ site.baseurl }}/apps/images/{{ page.appname }}/{{ page.title | downcase }}{% endcapture %}
 
 <div class="pl-pattern">
 

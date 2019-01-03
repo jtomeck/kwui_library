@@ -13,6 +13,8 @@ exclude:
   - salt
   - Vagrantfile
 
+baseurl: "/kwui_library"
+
 # Whether or not to include docs that are marked as preview
 includePreviews: true
 

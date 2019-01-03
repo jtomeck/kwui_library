@@ -13,7 +13,7 @@ layout: general
         {% for app in site.apps %}
             {% if app.toplevel %}
                 <div class="col-sm-3 app">
-                    <a href="{{ app.url }}">
+                    <a href="{{ site.baseurl }}{{ app.url }}">
                         <img src="{{ app.logo }}" alt="{{ app.title }}">
                     </a>
                 </div>
