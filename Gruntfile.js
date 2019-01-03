@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         tmp: '.tmp',
         assets: 'generated',
         downloads: 'downloads',
-        usptostrap: 'usptostrap',
+        kwbootstrap: 'kwbootstrap',
         front: 'front/'
     };
     grunt.initConfig({
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                 }, {// icon sprite and png to assets folder
                     dot: true,
                     expand: true,
-                    cwd: 'usptostrap/images/icons',
+                    cwd: 'kwbootstrap/images/icons',
                     src: ['*.svg', '*.png'],
                     dest: '<%= paths.assets %>/images/icons'
                 }, {// favicon sprite to assets folder
@@ -58,10 +58,10 @@ module.exports = function (grunt) {
                     cwd: 'generated/styles',
                     src: 'vendor.css',
                     dest: '<%= paths.downloads %>/vendor'
-                }, {// usptostrap src to downloads folder
+                }, {// kwbootstrap src to downloads folder
                     dot: false,
                     expand: true,
-                    cwd: 'usptostrap',
+                    cwd: 'kwbootstrap',
                     src: '**/*',
                     dest: '<%= paths.downloads %>/'
                 }, {// minified css to downloads folders
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
         },
         // Lint LESS
         lesslint: {
-            src: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
+            src: ['kwbootstrap/less/**/*.less', 'front/styles/**/*.less'],
             options: {
                 csslint: {
                     'box-model': false,
@@ -106,15 +106,15 @@ module.exports = function (grunt) {
         // LESS -> CSS
         less: {
             options: {
-                paths: ['usptostrap/less', 'bower_components'],
+                paths: ['kwbootstrap/less', 'bower_components'],
                 compress: true
                 //sourceMap: true
             },
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'usptostrap/less',
-                    src: ['usptostrap.less'],
+                    cwd: 'kwbootstrap/less',
+                    src: ['kwbootstrap.less'],
                     dest: '<%= paths.downloads %>/css/',
                     ext: '.min.css'
                 }, {
@@ -139,7 +139,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '<%= paths.downloads %>/css/usptostrap.css': '<%= paths.usptostrap %>/sass/usptostrap.scss',
+                    '<%= paths.downloads %>/css/kwbootstrap.css': '<%= paths.kwbootstrap %>/sass/kwbootstrap.scss',
                     '<%= paths.assets %>/styles/pattern-library.css': '<%= paths.front %>styles/sass/pattern-library.scss',
                     '<%= paths.assets %>/styles/appDemo.css': '<%= paths.front %>styles/sass/appDemo/appDemo.scss'
                 }
@@ -150,7 +150,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    '<%= paths.downloads %>/css/usptostrap.min.css': '<%= paths.usptostrap %>/sass/usptostrap.scss',
+                    '<%= paths.downloads %>/css/kwbootstrap.min.css': '<%= paths.kwbootstrap %>/sass/kwbootstrap.scss',
                     '<%= paths.assets %>/styles/pattern-library.css': '<%= paths.front %>styles/sass/pattern-library.scss',
                     '<%= paths.assets %>/styles/appDemo.min.css': '<%= paths.front %>styles/sass/appDemo/appDemo.scss'
                 }
@@ -170,7 +170,7 @@ module.exports = function (grunt) {
                 }, {
                     expand: true,
                     cwd: '<%= paths.downloads %>/css/',
-                    src: 'usptostrap.min.css',
+                    src: 'kwbootstrap.min.css',
                     dest: '<%= paths.downloads %>/css/'
                 }]
             }
@@ -256,7 +256,7 @@ module.exports = function (grunt) {
                     linebreak: true
                 },
                 files: {
-                    src: ['<%= paths.downloads %>/css/usptostrap.min.css']
+                    src: ['<%= paths.downloads %>/css/kwbootstrap.min.css']
                 }
             }
         },
@@ -267,7 +267,7 @@ module.exports = function (grunt) {
                 tasks: ['jshint', 'concat:mainjs', 'concat:appDemojs']
             },
             less: {
-                files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
+                files: ['kwbootstrap/less/**/*.less', 'front/styles/**/*.less'],
                 tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
             },
             sass: {
