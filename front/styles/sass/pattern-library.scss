@@ -1,5 +1,5 @@
-@import "../../../kwbootstrap/sass/kwbootstrap.scss";
-@import "pattern-library-hjs-github";
+@import '../../../kwbootstrap/sass/kwbootstrap';
+@import 'pattern-library-hjs-github';
 
 $pl-background-color: #f6f6f6;
 // $navbar-height: 42px;
@@ -9,613 +9,665 @@ $pl-sidebar-bg: #282930;
 $pl-sidebar-link-fg: $white;
 $pl-sidebar-sublink-fg: #ccc;
 $pl-sidebar-category-fg: mix($pl-sidebar-bg, $white, 75%);
-$pl-sidebar-link-active-bg: mix($pl-sidebar-bg, #000, 85%);
+$pl-sidebar-link-active-bg: mix($pl-sidebar-bg, $black, 85%);
 $pl-sub-header-height: 0;
 $pl-sub-header-bg: $faint-white;
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    position: relative;
-    overflow-y: auto;
-    background-color: $pl-background-color;
+  background-color: $pl-background-color;
+  overflow-y: auto;
+  position: relative;
 }
 
 .pl-palette-color {
-    display: inline-block;
-    @include rem(padding, 4px);
-    @include rem(margin-bottom, 8px);
-    @include rem(margin-right, 8px);
-    @include rem(min-height, 165px);
-    @include rem(width, 215px);
-    border: 1px solid $gray-46;
-    text-align: center;
-    vertical-align: top;
+  @include rem(margin-bottom, 8px);
+  @include rem(margin-right, 8px);
+  @include rem(min-height, 165px);
+  @include rem(padding, 4px);
+  @include rem(width, 215px);
+  border: 1px solid $gray-46;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
 
-    .pl-palette-preview {
-        @include rem(border-radius, 2px);
-        @include rem(height, 75px);
-        @include rem(margin-bottom, 5px);
-    }
+  .pl-palette-preview {
+    @include rem(border-radius, 2px);
+    @include rem(height, 75px);
+    @include rem(margin-bottom, 5px);
+  }
 
-    .pl-palette-description {
-        @include rem(font-size, 12px);
-        @include rem(padding, 10px);
-        line-height: 1.2em;
+  .pl-palette-description {
+    @include rem(font-size, 12px);
+    @include rem(padding, 10px);
+    line-height: 1.2em;
 
-    }
+  }
 
-    .pl-palette-variable {
-        font-weight: $font-weight-semi-bold;
-        color: darken($gray-light,20%);
-    }
+  .pl-palette-variable {
+    color: darken($gray-light, 20%);
+    font-weight: $font-weight-semi-bold;
+  }
 }
 
 .pl-header {
-    padding: 0;
+  padding: 0;
 
+  .navbar-brand {
+    @include rem(width, 167px);
+    @include rem(padding-left, 16px);
+    background: darken($pl-header-bg, 5%);
+  }
+
+  .pl-uspto-logo {
+    @include rem(margin-top, -2px);
+  }
+
+  .nav-collapse {
+    @include rem(padding, 12px 14px);
+    background: darken($pl-header-bg, 5%);
+    border: 0;
+    float: left;
+    height: $navbar-height;
+  }
+
+  &.navbar-inverse {
     .navbar-brand {
-        @include rem(width, 167px);
-        @include rem(padding-left, 16px);
-        background: darken($pl-header-bg, 5%);
-    }
-
-    .pl-uspto-logo {
-        @include rem(margin-top, -2px);
+      color: $white;
+      height: 49px;
     }
 
     .nav-collapse {
-        background: darken($pl-header-bg, 5%);
-        @include rem(padding, 12px 14px);
-        border: none;
-        float: left;
-        height: $navbar-height;
+      height: 49px;
     }
+  }
 
-    &.navbar-inverse {
-        .navbar-brand {
-            color: $white;
-            height: 49px;
+  .navbar-right,
+  .navbar-left {
+    margin: 0;
+
+    li {
+      a {
+        @include rem(padding, 14px 20px 16px)
+      }
+
+      &.active {
+        & > a {
+          background: rgba(255, 255, 255, .1);
+          opacity: 1;
+
+          &:hover {
+            background: $white;
+            color: $brand-primary;
+          }
         }
-        .nav-collapse {
-            height: 49px;
-        }
+      }
     }
-    .navbar-right,
-    .navbar-left {
-        margin: 0;
-        li {
-            a {
-                @include rem(padding, 14px 20px 16px)
-            }
-            &.active {
-                & > a {
-                    background: rgba(255,255,255,.1);
-                    &:hover {
-                        background: $white;
-                        color: $brand-primary;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 .pl-collapsed-nav {
-    .pl-sidebar {
-        display: none;
+  .pl-sidebar {
+    display: none;
+  }
+
+  .pl-content {
+    margin-left: 0;
+  }
+
+  .pl-sub-header {
+    left: 0;
+  }
+
+  .pl-header {
+    .navbar-brand {
+      @extend .hidden;
     }
-    .pl-content {
-        margin-left: 0;
+
+    .container-fluid {
+      padding-left: 0;
     }
-    .pl-sub-header {
-        left: 0;
+
+    .container-fluid > .navbar-header {
+      margin-left: 0;
     }
-    .pl-header .navbar-brand {
-        @extend .hidden;
-    }
-    .pl-header .container-fluid {
-        padding-left: 0;
-    }
-    .pl-header .container-fluid > .navbar-header {
-        margin-left: 0;
-    }
+  }
 }
 
 .pl-no-sidebar {
-    @include rem(padding-top, 10px);
-    @include rem(padding-bottom, 10px);
+  @include rem(padding-top, 10px);
+  @include rem(padding-bottom, 10px);
 
-    .pl-sidebar {
-        display: none;
-    }
-    .pl-content {
-        margin: auto;
-        @include rem(padding-left, 8px);
-        @include rem(padding-right, 8px);
-    }
-    .navbar-brand {
-        background: none;
-    }
+  .pl-sidebar {
+    display: none;
+  }
+
+  .pl-content {
+    @include rem(padding-left, 8px);
+    @include rem(padding-right, 8px);
+    margin: auto;
+  }
+
+  .navbar-brand {
+    background: none;
+  }
 }
 
 .pl-sub-header {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-    position: fixed;
-    @include rem(padding, 15px);
-    z-index: 2;
-    right: 0;
-    left: $pl-sidebar-width;
-    top: $navbar-height;
-    min-height: $pl-sub-header-height - 1;
-    background: $white;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  @include rem(padding, 15px);
+  background: $white;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+  left: $pl-sidebar-width;
+  min-height: $pl-sub-header-height - 1;
+  position: fixed;
+  right: 0;
+  top: $navbar-height;
+  z-index: 2;
 
-    h3 {
-        @include rem(margin-left, 8px);
-        @include rem(margin-top, 12px);
-        @include rem(margin-bottom, 4px);
-        font-weight: $font-weight-semi-bold;
-    }
-    h5 {
-        @include rem(margin-left, 8px);
-        color: $gray-light;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  h3 {
+    @include rem(margin-left, 8px);
+    @include rem(margin-top, 12px);
+    @include rem(margin-bottom, 4px);
+    font-weight: $font-weight-semi-bold;
+  }
 
-    .pull-right {
-        padding: 0;
-    }
+  h5 {
+    @include rem(margin-left, 8px);
+    color: $gray-light;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .pull-right {
+    padding: 0;
+  }
 }
 
 .pl-container {
-    position: relative;
-    height: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .pl-panel {
-    display: block;
-    @include rem(margin, 40px);
-    @include rem(padding, 40px);
-    line-height: 1.8;
-    background: $white;
-    border: 1px solid $gray-47;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .025);
+  @include rem(margin, 40px);
+  @include rem(padding, 40px);
+  background: $white;
+  border: 1px solid $gray-47;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .025);
+  display: block;
+  line-height: 1.8;
 }
 
 .pl-content {
-    @include rem(margin-left, $pl-sidebar-width);
-    position: relative;
+  @include rem(margin-left, $pl-sidebar-width);
+  @include rem(padding-top, $navbar-height + $pl-sub-header-height);
+  position: relative;
+
+  @media(max-width: $screen-xs-max) {
     @include rem(padding-top, $navbar-height + $pl-sub-header-height);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pl-footer {
+    @include rem(padding, 0 30px 30px 30px);
+  }
+
+  .pl-pattern {
+    @extend .pl-panel;
+    @include rem(padding, 40px);
 
     @media(max-width: $screen-xs-max) {
-        margin-left: 0;
-        @include rem(padding-top, $navbar-height + $pl-sub-header-height);
-        padding-left: 0;
-        padding-right: 0;
+      @include rem(margin, 6px);
     }
 
-    .pl-footer {
-        @include rem(padding, 0 30px 30px 30px);
+    > h3 {
+      @include rem(font-size, 28px);
+      font-weight: $font-weight-normal;
+      margin-top: 0;
+
+      .pl-heading-link {
+        text-decoration: none;
+
+        .pl-heading-link-hash {
+          color: #ccc;
+          display: none;
+          position: absolute;
+        }
+
+        &:hover {
+          .pl-heading-link-hash {
+            @include rem(margin-left, -20px);
+            display: inline-block;
+          }
+        }
+      }
     }
 
-    .pl-pattern {
-        @extend .pl-panel;
-        @include rem(padding, 40px);
+    > h4 {
+      @include rem(margin-top, 40px);
+    }
 
-        @media(max-width: $screen-xs-max) {
-            @include rem(margin, 6px);
-        }
+    img {
+      max-width: 100%;
+    }
 
-        > h3 {
-            @include rem(font-size, 28px);
-            margin-top: 0;
-            font-weight: $font-weight-normal;
-            .pl-heading-link {
-                text-decoration: none;
-                .pl-heading-link-hash {
-                    color: #ccc;
-                    position: absolute;
-                    display: none;
-                }
-                &:hover .pl-heading-link-hash {
-                    @include rem(margin-left, -20px);
-                    display: inline-block;
-                }
-            }
-        }
+    .pl-toggle-code {
+      @include rem(padding, 0 10px 0 8px);
+      @include rem(border-bottom-left-radius, 2px);
+      background: #fafafa;
+      border-bottom: 1px solid $gray-46;
+      border-left: 1px solid $gray-46;
+      cursor: pointer;
+      display: block;
+      font-weight: $font-weight-semi-bold;
+      position: absolute;
+      right: 0;
+      top: 0;
 
-        > h4 {
-            @include rem(margin-top, 40px);
-        }
+      .icon {
+        @include rem(margin-right, 3px);
+      }
 
-        img {
-            max-width: 100%;
-        }
-
-        .pl-toggle-code {
-            position: absolute;
-            top: 0;
-            display: block;
-            right: 0;
-            @include rem(padding, 0 10px 0 8px);
-            font-weight: $font-weight-semi-bold;
-            border-left: 1px solid $gray-46;
-            border-bottom: 1px solid $gray-46;
-            @include rem(border-bottom-left-radius, 2px);
-            background: #fafafa;
-            cursor: pointer;
-
-            .icon {
-                @include rem(margin-right, 3px);
-            }
-
-            &:hover, &.active {
-                background: #f0f0f0;
-            }
-
-        }
-
-        .pl-preview {
-            background: #fefefe;
-            position: relative;
-            @include rem(margin, 20px -40px 0 -40px);
-            @include rem(padding, 30px 40px);
-            border: 1px solid $gray-46;
-            border-left: 0;
-            border-right: 0;
-            line-height: $line-height-base;
-
-            @media(max-width: $screen-xs-max) {
-                @include rem(margin, 0 -15px);
-                @include rem(adding, 30px 15px);
-            }
-
-            &::before {
-                content: "Example";
-                position: absolute;
-                top: 0;
-                @include rem(right, 111px);
-                @include rem(padding, 0 8px);
-                color: $gray-65;
-                font-weight: $font-weight-semi-bold;
-                border-left: 1px solid $gray-46;
-                border-bottom: 1px solid $gray-46;
-                @include rem(border-bottom-left-radius, 2px);
-                background: #fafafa;
-            }
-            + .highlight {
-                display: none;
-                @include rem(padding, 30px 40px);
-                @include rem(margin, 0 -40px);
-                position: relative;
-                z-index: 2;
-                background: #fefefe;
-                border-bottom: 1px solid $gray-46;
-            }
-        }
-        pre {
-            border-radius: 0;
-            border: 0;
-            padding: 0;
-            word-wrap: normal;
-            background: transparent;
-
-            code {
-                white-space: pre;
-            }
-        }
-
-        .highlight {
-            padding: 0;
-        }
+      &:hover,
+      &.active {
+        background: #f0f0f0;
+      }
 
     }
+
+    .pl-preview {
+      @include rem(margin, 20px -40px 0 -40px);
+      @include rem(padding, 30px 40px);
+      background: #fefefe;
+      border: 1px solid $gray-46;
+      border-left: 0;
+      border-right: 0;
+      line-height: $line-height-base;
+      position: relative;
+
+      @media(max-width: $screen-xs-max) {
+        @include rem(margin, 0 -15px);
+        @include rem(adding, 30px 15px);
+      }
+
+      &::before {
+        @include rem(border-bottom-left-radius, 2px);
+        @include rem(right, 111px);
+        @include rem(padding, 0 8px);
+        background: #fafafa;
+        border-bottom: 1px solid $gray-46;
+        border-left: 1px solid $gray-46;
+        color: $gray-65;
+        content: 'Example';
+        font-weight: $font-weight-semi-bold;
+        position: absolute;
+        top: 0;
+      }
+
+      + .highlight {
+        @include rem(padding, 30px 40px);
+        @include rem(margin, 0 -40px);
+        background: #fefefe;
+        border-bottom: 1px solid $gray-46;
+        display: none;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    pre {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      word-wrap: normal;
+
+      code {
+        white-space: pre;
+      }
+    }
+
+    .highlight {
+      padding: 0;
+    }
+
+  }
 }
 
 .pl-icon-list {
-    line-height: 2;
-    @include rem(font-size, 13px);
-    color: #888;
-    i {
-        display: inline-block;
-        @include rem(width, 20px);
-        @include rem(margin-right, 6px);
-        text-align: left;
-        color: #333;
-    }
+  @include rem(font-size, 13px);
+  color: #888;
+  line-height: 2;
+
+  i {
+    @include rem(width, 20px);
+    @include rem(margin-right, 6px);
+    color: #333;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 .pl-icon-list-large {
-    line-height: 2;
-    @include rem(font-size, 13px);
-    color: #888;
-    i {
-        display: inline-block;
-        @include rem(width, 20px);
-        @include rem(margin-right, 36px);
-        text-align: left;
-        color: #333;
-    }
+  @include rem(font-size, 13px);
+  color: #888;
+  line-height: 2;
+
+  i {
+    @include rem(width, 20px);
+    @include rem(margin-right, 36px);
+    color: #333;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
-.pl-grid-example .row > div > div {
-    background: #f0f0f0;
-    color: $gray-65;
-    border: 1px solid $gray-46;
-    @include rem(padding, 6px);
-    text-align: center;
+.pl-grid-example {
+  .row > div > div {
     @include rem(margin-bottom, 16px);
+    @include rem(padding, 6px);
+    background: #f0f0f0;
+    border: 1px solid $gray-46;
+    color: $gray-65;
+    text-align: center;
+  }
 }
 
 .pl-preview-header {
-    text-align: center;
-    @include rem(line-height, 40px);
-    @include rem(margin-bottom, -40px);
-    font-weight: $font-weight-normal;
+  @include rem(line-height, 40px);
+  @include rem(margin-bottom, -40px);
+  font-weight: $font-weight-normal;
+  text-align: center;
 
-    @media(max-width: $screen-xs-max) {
-            @include rem(margin-bottom, -6px);
-    }
+  @media(max-width: $screen-xs-max) {
+    @include rem(margin-bottom, -6px);
+  }
 }
 
 .pl-sidebar {
-    float: left;
-    overflow: auto;
-    top: $navbar-height + $pl-sub-header-height;
-    background: $pl-sidebar-bg;
-    bottom: 0;
-    margin: 0;
-    position: fixed;
-    width: $pl-sidebar-width;
-    z-index: $zindex-navbar-fixed - 1;
-    @include rem(padding, 12px 0 6px 0);
-}
+  @include rem(padding, 12px 0 6px 0);
+  background: $pl-sidebar-bg;
+  bottom: 0;
+  float: left;
+  margin: 0;
+  overflow: auto;
+  position: fixed;
+  top: $navbar-height + $pl-sub-header-height;
+  width: $pl-sidebar-width;
+  z-index: $zindex-navbar-fixed - 1;
 
-.pl-sidebar .nav.nav-stacked {
-    @include rem(padding-top, 15px);
-    list-style: none;
-    font-weight: $font-weight-semi-bold;
+  .nav {
+    &.nav-stacked {
+      @include rem(padding-top, 15px);
+      font-weight: $font-weight-semi-bold;
+      list-style: none;
 
-    > li > a {
+      > li > a {
         color: $pl-sidebar-link-fg;
+
         &:hover,
         &:focus {
-            background: $pl-sidebar-link-active-bg;
-            color: $pl-sidebar-link-fg;
+          background: $pl-sidebar-link-active-bg;
+          color: $pl-sidebar-link-fg;
         }
-    }
+      }
 
-    > li.active > a {
+      > .active > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
-    }
+      }
 
-    > li > ul > li > a {
-        background: $pl-sidebar-link-active-bg;
-        color: $pl-sidebar-sublink-fg;
-        border-left-color: transparent;
+      > li > ul > li > a {
         @include rem(font-size, $font-size-base - 1);
+        background: $pl-sidebar-link-active-bg;
+        border-left-color: transparent;
+        color: $pl-sidebar-sublink-fg;
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
-    }
+        white-space: nowrap;
+      }
 
-    > li > ul > li:last-child > a {
-        @include rem(padding-bottom, 8px);
-    }
+      > li > ul > li {
+        &:last-child > a {
+          @include rem(padding-bottom, 8px);
+        }
+      }
 
-    > li > ul > li.active > a {
+      > li > ul > .active > a {
         background: $pl-sidebar-link-active-bg;
         color: $pl-sidebar-link-fg;
-    }
+      }
 
-    li + li {
+      li + li {
         margin-top: 0;
 
         &.category {
-            @include rem(margin-top, 18px);
+          @include rem(margin-top, 18px);
         }
-    }
+      }
 
-    > .category {
+      > .category {
         color: $pl-sidebar-category-fg;
-    }
+      }
 
-    > li > a > .fa {
+      > li > a > .fa {
+        @include rem(top, 1px);
         color: $white;
+        left: .6em;
         opacity: .15;
         position: relative;
-        @include rem(top, 1px);
-        left: .6em;
+      }
     }
-
+  }
 }
 
 .pl-hero {
-    background-color: $brand-primary;
-    @include rem(padding-bottom, 75px);
-    @include rem(padding-top, 50px);
-    background-image: url(../images/hero-mockup.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 550px;
+  @include rem(padding-bottom, 75px);
+  @include rem(padding-top, 50px);
+  background-color: $brand-primary;
+  background-image: url('../images/hero-mockup.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
 
-    .btn {
-        @include rem(margin, 0 10px);
-        @include rem(min-width, 120px);
-        border: 2px solid $white;
-        box-shadow: none;
-        background: $brand-primary;
+  .btn {
+    @include rem(margin, 0 10px);
+    @include rem(min-width, 120px);
+    background: $brand-primary;
+    border: 2px solid $white;
+    box-shadow: none;
 
-        @media(max-width: $screen-xs-max) {
-            display: block;
-            @include rem(margin, 10px auto);
-            @include rem(max-width, 300px);
-        }
-
+    @media(max-width: $screen-xs-max) {
+      @include rem(margin, 10px auto);
+      @include rem(max-width, 300px);
+      display: block;
     }
+  }
 
-    .btn-default {
-        color: $brand-primary;
-        background: $white;
-    }
+  .btn-default {
+    background: $white;
+    color: $brand-primary;
+  }
 
-    .container {
-        @include rem(padding, 20px 8px);
-    }
+  .container {
+    @include rem(padding, 20px 8px);
+  }
 
-    h1 {
-        color: $white;
-        @include rem(font-size, 50px);
-        font-weight: 200;
-    }
-    h3 {
-        color: mix($brand-primary, $white, 50%);
-        @include rem(font-size, 20px);
-        font-weight: $font-weight-normal;
-    }
+  h1 {
+    @include rem(font-size, 50px);
+    color: $white;
+    font-weight: 200;
+  }
+
+  h3 {
+    @include rem(font-size, 20px);
+    color: mix($brand-primary, $white, 50%);
+    font-weight: $font-weight-normal;
+  }
 }
 
 .pl-help {
-    background-color: $pl-sidebar-bg;
+  @include rem(font-size, 14px);
+  @include rem(padding, 30px);
+  background-color: $pl-sidebar-bg;
+  color: mix($pl-sidebar-bg, $white, 50%);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  h4 {
     color: $white;
-    display: inline-block;
-    width: 100%;
-    @include rem(font-size, 14px);
-    text-align: center;
-    h4 {
-        color: $white;
-    }
-    @include rem(padding, 30px);
+  }
+
+  a {
     color: mix($pl-sidebar-bg, $white, 50%);
-    a {
-        color: mix($pl-sidebar-bg, $white, 50%);
-        text-decoration: underline;
-    }
+    text-decoration: underline;
+  }
 }
 
 .pl-heading-fancy {
-    color: $brand-success;
-    &:after {
-        display: block;
-        content: "";
-        @include rem(height, 1px);
-        background: mix($brand-success, $white, 75%);
-        @include rem(width, 60px);
-        @include rem(margin-top, 8px);
-        margin-left: 0;
-        @include rem(margin-bottom, 20px);
-    }
+  color: $brand-success;
+
+  &::after {
+    @include rem(height, 1px);
+    @include rem(width, 60px);
+    @include rem(margin-top, 8px);
+    @include rem(margin-bottom, 20px);
+    background: mix($brand-success, $white, 75%);
+    content: '';
+    display: block;
+    margin-left: 0;
+  }
 }
 
 .pl-about {
-    background: $white;
-    @include rem(padding-top, 50px);
-    @include rem(padding-bottom, 50px);
-    @include rem(font-size, 16px);
-    line-height: 1.6;
+  @include rem(padding-top, 50px);
+  @include rem(padding-bottom, 50px);
+  @include rem(font-size, 16px);
+  background: $white;
+  line-height: 1.6;
 
-    h4 {
-        @include rem(margin-top, 21px)
-    }
+  h4 {
+    @include rem(margin-top, 21px)
+  }
 
-    .pl-padded-col {
-        @include rem(padding, 20px 40px);
-        p {
-            text-align: left;
-        }
+  .pl-padded-col {
+    @include rem(padding, 20px 40px);
+
+    p {
+      text-align: left;
     }
+  }
 }
 
 /* =======================================
  * APPLICATION STYLES
  * ======================================= */
 
+// sass-lint:disable no-mergeable-selectors
 .pl-hero {
-    &.applications {
-        height: auto;
-    }
+  &.applications {
+    height: auto;
+  }
 }
+// sass-lint:enable no-mergeable-selectors
 
+// sass-lint:disable no-mergeable-selectors
 .pl-about {
-    &.applications {
-        .app {
-            display:block;
-            padding:15px;
-            & > a {
-                border: 1px solid #ececec;
-                border-radius: 3px;
-                display: flex;
-                height: 150px;
-                padding: 25px;
-                transition: all .15s ease-in-out;
-                width: 100%;
-                img {
-                    align-items: center;
-                    width: 100%;
-                }
-                &:hover {
-                    border-bottom: 5px solid $brand-secondary;
-                }
-            }
-        }
-    }
-}
+  &.applications {
+    .app {
+      display: block;
+      padding: 15px;
 
-.pl-pattern {
-    .applogo {
-        max-width: 225px !important;
-    }
-    .pl-padded-col {
-        @include rem(padding, 20px 40px);
-        p {
-            text-align: left;
+      & > a {
+        border: 1px solid #ececec;
+        border-radius: 3px;
+        display: flex;
+        height: 150px;
+        padding: 25px;
+        transition: all .15s ease-in-out;
+        width: 100%;
+
+        img {
+          align-items: center;
+          width: 100%;
         }
+
+        &:hover {
+          border-bottom: 5px solid $brand-secondary;
+        }
+      }
     }
+  }
 }
+// sass-lint:enable no-mergeable-selectors
+
+// sass-lint:disable no-mergeable-selectors
+.pl-pattern {
+  .applogo {
+    max-width: 225px !important;
+  }
+
+  .pl-padded-col {
+    @include rem(padding, 20px 40px);
+
+    p {
+      text-align: left;
+    }
+  }
+}
+// sass-lint:enable no-mergeable-selectors
 
 .do-dont {
-    @include rem(padding, 15px 0);
-    max-width: 100%;
-    overflow: hidden;
-    .row {
-        @include rem(margin-left, -40px);
-        @include rem(margin-right, -40px);
-    }
+  @include rem(padding, 15px 0);
+  max-width: 100%;
+  overflow: hidden;
 
-    $do: #4caf50;
-    $dont: #d32f2f;
+  .row {
+    @include rem(margin-left, -40px);
+    @include rem(margin-right, -40px);
+  }
 
-    .do, .dont {
-        > p {
-            border-top:4px solid;
-            @include rem(padding, 10px);
-            span {
-                font-weight: bold;
-            }
-        }
-    }
+  $do: #4caf50;
+  $dont: #d32f2f;
 
-    .do {
-        > p {
-            border-color: $do;
-            span {
-                color: darken($do, 15%);
-            }
-        }
-    }
+  .do,
+  .dont {
+    > p {
+      @include rem(padding, 10px);
+      border-top: 4px solid;
 
-    .dont {
-        > p {
-            border-color: $dont;
-            span {
-                color: darken($dont, 15%);
-            }
-        }
+      span {
+        font-weight: bold;
+      }
     }
+  }
+
+  .do {
+    > p {
+      border-color: $do;
+
+      span {
+        color: darken($do, 15%);
+      }
+    }
+  }
+
+  .dont {
+    > p {
+      border-color: $dont;
+
+      span {
+        color: darken($dont, 15%);
+      }
+    }
+  }
 }
