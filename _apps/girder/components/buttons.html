@@ -5,13 +5,16 @@ appname: girder
 layout: application
 ---
 
-{% capture imgurl %}{{ site.baseurl }}/apps/images/{{ page.appname }}/{{ page.title | downcase }}{% endcapture %}
+{% capture imgurl %}
+  {{ site.baseurl }}/apps/images/{{ page.appname }}/{{ page.title | downcase }}
+{% endcapture %}
 
 <div class="pl-pattern">
 
 <h3>Buttons</h3>
 
-<p>Buttons are used as triggers for actions. There are different types of buttons depending on the situation. This page will cover the different button types and situations.</p>
+<p>Buttons are used as triggers for actions. There are different types of buttons depending on the
+situation. This page will cover the different button types and situations.</p>
 
 </div>
 
@@ -24,16 +27,24 @@ layout: application
     <h4>There are 3 main button styles:</h4>
 
     <ul>
-        <li><strong>Depressed</strong>, the main button style. Used for actions that require emphasis, such as buttons used for confirmations and other top-level actions
+        <li><strong>Depressed</strong>, the main button style. Used for actions that require
+        emphasis, such as buttons used for confirmations and other top-level actions
             <ul>
-                <li><strong>Icon buttons</strong> are used sparingly to avoid visual clutter. Use this when you need to call a bit more attention to the button. The icon color will always match that of the font. The icon will usually be positioned on the right of the button.</li>
+                <li><strong>Icon buttons</strong> are used sparingly to avoid visual clutter. Use
+                this when you need to call a bit more attention to the button. The icon color will
+                always match that of the font. The icon will usually be positioned on the right of
+                the button.</li>
             </ul>
         </li>
-        <li><strong>Outline</strong>, used for secondary actions that are needed within a larger workflow, where emphasis is not important.</li>
-        <li><strong>Flat</strong>, used alongside "Depressed" buttons. Depending on the color used, these can be used for actions secondary to the main action, or opposite actions such as "cancel".</li>
+        <li><strong>Outline</strong>, used for secondary actions that are needed within a larger
+        workflow, where emphasis is not important.</li>
+        <li><strong>Flat</strong>, used alongside "Depressed" buttons. Depending on the color used,
+        these can be used for actions secondary to the main action, or opposite actions such as
+        "cancel".</li>
     </ul>
     <hr>
-    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button Documentation</a> for more details.</strong></p>
+    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button
+    Documentation</a> for more details.</strong></p>
 
 </div><!-- end button styles -->
 
@@ -41,10 +52,12 @@ layout: application
 
     <h3 id="button-sizes">Button sizes</h3>
 
-    <p>Vuetify comes with large, medium and small sized buttons. Here is how they are used for Girder.</p>
+    <p>Vuetify comes with large, medium and small sized buttons. Here is how they are used for
+    Girder.</p>
 
     <ul>
-        <li><strong>Large</strong>, used for the most important and top-level action buttons (e.g. the main upload button or any confirmative action buttons).</li>
+        <li><strong>Large</strong>, used for the most important and top-level action buttons (e.g.
+        the main upload button or any confirmative action buttons).</li>
         <li><strong>Medium</strong> is not used at all.</li>
         <li><strong>Small</strong>, used for secondary actions within a workflow.</li>
     </ul>
@@ -54,7 +67,8 @@ layout: application
     <p style="margin-top: 25px;"><img src="{{ imgurl }}/button_sizes.jpg" alt="" width="950px"></p>
 
     <hr>
-    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button Documentation</a> for more details.</strong></p>
+    <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/buttons">Button
+    Documentation</a> for more details.</strong></p>
 </div><!-- end button sizes -->
 
 <div class="pl-pattern">
@@ -62,52 +76,74 @@ layout: application
     <h3 id="button-rules">General Button Rules</h3>
 
     <h4>Confirmation Buttons</h4>
-    <p>Buttons that represent confirmative actions should be thought of as the conclusion of a workflow. Therefore they should be the last thing displayed and should always be on the right.</p>
+    <p>Buttons that represent confirmative actions should be thought of as the conclusion of a
+    workflow. Therefore they should be the last thing displayed and should always be on the
+    right.</p>
     <div class="do-dont">
         <div class="row">
             <div class="col-sm-6 pl-padded-col do">
                 <img src="{{ imgurl }}/confirmative_do.jpg" alt="">
-                <p><span>Do.</span> The confirmative action button is given the most emphasis by using the depressed button style (using <code>light-blue darken-1</code>). The cancel button is close by to avoid having to move the mouse too far and is de-emphasized by using the "flat" button style. The color <code>red accent-3</code> is used to signify the button is a negative action.</p>
+                <p><span>Do.</span> The confirmative action button is given the most emphasis by
+                using the depressed button style (using <code>light-blue darken-1</code>). The
+                cancel button is close by to avoid having to move the mouse too far and is
+                de-emphasized by using the "flat" button style. The color <code>red accent-3</code>
+                is used to signify the button is a negative action.</p>
             </div>
 
             <div class="col-sm-6 pl-padded-col dont">
                 <img src="{{ imgurl }}/confirmative_dont.jpg" alt="">
-                <p><span>Don't.</span> Even though the user would still understand the workflow displayed here, it is not best practice to display action buttons on the left side. Think of the action buttons as "next" buttons, since their job is to move you forward in the flow. Putting them on the right reinforces that forward movement.</p>
+                <p><span>Don't.</span> Even though the user would still understand the workflow
+                displayed here, it is not best practice to display action buttons on the left side.
+                Think of the action buttons as "next" buttons, since their job is to move you
+                forward in the flow. Putting them on the right reinforces that forward movement.</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6 pl-padded-col dont">
                 <img src="{{ imgurl }}/confirmative_dont1.jpg" alt="">
-                <p><span>Don't.</span> Even though listing the main action button first supports the natural reading order, it is not best practice to display UI actions in this order. Placing the main action button last improves the flow because it assumes this button is the conclusion of said flow. The conclusion always comes last.</p>
+                <p><span>Don't.</span> Even though listing the main action button first supports the
+                natural reading order, it is not best practice to display UI actions in this order.
+                Placing the main action button last improves the flow because it assumes this button
+                is the conclusion of said flow. The conclusion always comes last.</p>
             </div>
 
             <div class="col-sm-6 pl-padded-col dont">
                 <img src="{{ imgurl }}/confirmative_dont2.jpg" alt="">
-                <p><span>Don't.</span> This seems like a completely reasonable way to display action buttons, right? The answer is yes, <strong>BUT</strong> even though there would be no confusion on the user's end, best practice is to keep the action buttons close to minimize mouse travel for the user.</p>
+                <p><span>Don't.</span> This seems like a completely reasonable way to display action
+                buttons, right? The answer is yes, <strong>BUT</strong> even though there would be
+                no confusion on the user's end, best practice is to keep the action buttons close
+                to minimize mouse travel for the user.</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6 pl-padded-col dont">
                 <img src="{{ imgurl }}/cancel_dont.jpg" alt="">
-                <p><span>Don't.</span> Negative action buttons should never have more or even similar emphasis to the confirmative action button.</p>
+                <p><span>Don't.</span> Negative action buttons should never have more or even
+                similar emphasis to the confirmative action button.</p>
             </div>
         </div>
     </div>
 
     <h4>Lists of actions</h4>
-    <p>Sometimes you will need more than one or two buttons to represent actions. In this case you will use a line separated list instead of full color buttons to avoid clutter. Using icons here is a good idea, because it differentiates the action allowing for quicker identification.</p>
+    <p>Sometimes you will need more than one or two buttons to represent actions. In this case you
+    will use a line separated list instead of full color buttons to avoid clutter. Using icons here
+    is a good idea, because it differentiates the action allowing for quicker identification.</p>
     <div class="do-dont">
         <div class="row">
             <div class="col-sm-5 pl-padded-col do">
                 <img src="{{ imgurl }}/listedactions_do.jpg" alt="">
-                <p><span>Do.</span> A background color is used to separate the action buttons from the content above and icons are used to visually differentiate them. Notice "Delete" is displayed in red to to indicate it is a negative action. </p>
+                <p><span>Do.</span> A background color is used to separate the action buttons from
+                the content above and icons are used to visually differentiate them. Notice "Delete"
+                is displayed in red to to indicate it is a negative action. </p>
             </div>
 
             <div class="col-sm-5 pl-padded-col dont">
                 <img src="{{ imgurl }}/listedactions_dont.jpg" alt="">
-                <p><span>Don't.</span> The use of full color background buttons makes this area more cluttered. The objective is to display it as a clean list than a group of larger, more emphasized buttons.</p>
+                <p><span>Don't.</span> The use of full color background buttons makes this area more
+                cluttered. The objective is to display it as a clean list than a group of larger,
+                more emphasized buttons.</p>
             </div>
         </div>
         <div class="row">
