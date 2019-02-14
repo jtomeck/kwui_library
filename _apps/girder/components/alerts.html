@@ -1,0 +1,72 @@
+---
+title: Alerts
+
+appname: girder
+layout: application
+---
+
+{% capture imgurl %}
+  {{ site.baseurl }}/apps/images/{{ page.appname }}/{{ page.title | downcase }}
+{% endcapture %}
+
+<div class="pl-pattern">
+  <h3>Alerts & Notifications</h3>
+  <p>Users need to be aware of important information related to their actions. Alerts and
+  notifications are our way of keeping them informed.</p>
+</div>
+
+<div class="pl-pattern">
+  <h3 id="button-styles">Alert Styles</h3>
+  <p style="margin-top: 25px;"><img src="{{ imgurl }}/alert_styles.jpg" alt="" width="950px"></p>
+  <h4>There are 4 types of alerts:</h4>
+  <ul>
+    <li><strong>Success</strong> - Typically only used for actions such as file uploads or folder
+    creation.</li>
+    <li><strong>Info</strong> - Lorem ipsum dolor sit amet.</li>
+    <li><strong>Warning</strong> – Lorem ipsum dolor sit amet.</li>
+    <li><strong>Error</strong> – Used for things like failed login attempts, interrupted uploads,
+    etc.</li>
+  </ul>
+  <hr>
+  <p><strong>See Vuetify's <a href="https://vuetifyjs.com/en/components/alerts">Alerts
+  Documentation</a> for more details.</strong></p>
+</div><!-- end alert styles -->
+
+<div class="pl-pattern">
+  <h3 id="button-styles">General Alert Rules</h3>
+  <p>Alerts should always be displayed at the top of the screen, full width, with a slight shadow
+  underneath. This creates one consistent place for the user to look to be aware of what is
+  happening.</p>
+
+  <div class="do-dont">
+    <div class="row">
+      <div class="col-sm-6 pl-padded-col do">
+        <img src="{{ imgurl }}/upload_complete.jpg" alt="">
+        <p><span>Do.</span> Alert on top of page, pushing the rest of the content down below it.
+        notice the slight shadow underneath to give it more emphasis. The upload workflow starts
+        in a modal. When it succeeds, the modal disappears and the success alert is displayed for
+        a short time, or until the user closes it.</p>
+      </div>
+
+      <div class="col-sm-6 pl-padded-col do">
+        <img src="{{ imgurl }}/folder_creation_fail.jpg" alt="">
+        <p><span>Do.</span> Once again the alert is on the top of the page, however, in this case
+        the modal does not close, due to there being errors within the form. If the modal were
+        to close, the user would have to go through the process all over again. <em>Notice the
+        form field with the error is also colored in red so the user does not have to think about
+        which field they need to fix.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="row">
+      <div class="col-sm-6 pl-padded-col dont">
+        <img src="{{ imgurl }}/folder_creation_fail_dont.jpg" alt="">
+        <p><span>Don't.</span> Although the alert is being displayed exactly where the problem is,
+        it sort of clutters / obscures the field from the user.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
